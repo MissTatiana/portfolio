@@ -27,7 +27,7 @@
 	</ul>
 
 	<div class="slide" id="slide 1">
-		<!-- logo here with wed attributes floating about -->
+		<img id="logo" src="assets/img/logo.png" />
 	</div>
 
 	<div class="slide" id="slide 2">
