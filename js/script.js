@@ -1,33 +1,43 @@
 jQuery(document).ready(function ($) {
 
 
-	/* PARALLAX
-	******************************/
+/* PARALLAX
+**********************************************/
 
-	//initialize stellar.js
-	$(window).stellar();
+//initialize stellar.js
+$(window).stellar();
 
-	//Variables
-	var links = $('.navigation').find('li');
-	var slide = $('.slide');
-	var button = $('.button');
-	mywindow = $(window);
-	htmlbody = $('html,body');
+//Variables
+var links = $('.navigation').find('li');
+var slide = $('.slide');
+var button = $('.button');
+mywindow = $(window);
+htmlbody = $('html,body');
 
-	//Setup waypoints plugin
-	slide.waypoint(function (event, direction) {
+//Setup waypoints plugin
+slide.waypoint(function (event, direction) {
 
-		//cache var of data-slide assoc w/ each slide
-		dataslide = $(this).attr('data-slide');
+	//cache var of data-slide assoc w/ each slide
+	dataslide = $(this).attr('data-slide');
 
-		//change the status of the navigation based on scroll
-		if(direction === 'down') {
-			$('.navigation li[data-slide="' + dataslide + '"]').addClass('active').prev().removeClass('active');
-		}
-		else {
-			$('.navigation li[data-slide="' + dataslide + '"]').addClass('active').next().removeClass('active');
-		}
+	//change the status of the navigation based on scroll
+	if(direction === 'down') {
+		$('.navigation li[data-slide="' + dataslide + '"]').addClass('active').prev().removeClass('active');
+	}
+	else {
+		$('.navigation li[data-slide="' + dataslide + '"]').addClass('active').next().removeClass('active');
+	}
 
-	});//slide.waypoint
+});//slide.waypoint
+
+/* Fade out
+**********************************************/
+
+
+$(window).scroll(function() {
+
+	console.log(scrollTop());
+
+});//window.scroll
 
 });//end
