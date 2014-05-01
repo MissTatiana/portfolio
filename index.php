@@ -13,15 +13,17 @@
 <body>
 <div class="centerwrapper">
 
-	<ul class="navigation">
+	<div class="navigation">
+	<ul class="nav">
 		<li data-slide="1">Slide 1</li>
 		<li data-slide="2">Slide 2</li>
 		<li data-slide="3">Slide 3</li>
 		<li data-slide="4">Slide 4</li>
 	</ul>
+	</div>
 
 
-	<img class="logo" src="assets/img/logo.png">
+	<img id="logo" class="opacity" src="assets/img/logo.png">
 
 	<div class="slide" id="slide1">
 		<div class="wrapper">
@@ -48,7 +50,6 @@
 			<!-- 11 --><img src="assets/img/langs/cake.png" data-stellar-ratio="3" data-stellar-vertical-offeset="-60" alt="">
 		</div><!-- wrapper -->
 
-		<span class="slideno">Slide 1</span>
 		<a class="button" data-slide="2" title=""></a>
 	</div><!-- slide1 -->
 

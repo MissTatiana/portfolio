@@ -30,14 +30,6 @@ slide.waypoint(function (event, direction) {
 
 });//slide.waypoint
 
-/* Fade out
-**********************************************/
 
-
-$(window).scroll(function() {
-
-	console.log(scrollTop());
-
-});//window.scroll
 
 });//end

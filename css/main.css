@@ -30,17 +30,45 @@ body {
 .navigation {
 	position: fixed;
 	z-index: 1;
+	top: 5px;
+	width: 100%;
+	height: 30px;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+
+	background: -moz-linear-gradient(left,  rgba(0,0,0,0.51) 0%, rgba(0,0,0,0.99) 50%, rgba(0,0,0,1) 51%, rgba(0,0,0,0.6) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.51)), color-stop(50%,rgba(0,0,0,0.99)), color-stop(51%,rgba(0,0,0,1)), color-stop(100%,rgba(0,0,0,0.6))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(0,0,0,0.51) 0%,rgba(0,0,0,0.99) 50%,rgba(0,0,0,1) 51%,rgba(0,0,0,0.6) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(0,0,0,0.51) 0%,rgba(0,0,0,0.99) 50%,rgba(0,0,0,1) 51%,rgba(0,0,0,0.6) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(0,0,0,0.51) 0%,rgba(0,0,0,0.99) 50%,rgba(0,0,0,1) 51%,rgba(0,0,0,0.6) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(0,0,0,0.51) 0%,rgba(0,0,0,0.99) 50%,rgba(0,0,0,1) 51%,rgba(0,0,0,0.6) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#82000000', endColorstr='#99000000',GradientType=1 ); /* IE6-9 */
+
+}
+
+.navigation ul {
+	margin: 10px 0 0 0;
+}
+
+.navigation li {
+	display: inline;
+	position: bottom;
+	width: 10%;
+	padding: 0 5% 0 5%;
+	color: rgba(255, 255, 255, 0.4);
+
+	font-size: 1.500em;
 }
 
 
 /* SLIDES
 **********************************************/
-.logo {
+#logo {
 	position: fixed;
-	top: 15%;
+	top: 20%;
 	left: 10%;
 	width: 783px;
-	z-index: 1;
+	z-index: 99;
 }
 
 .slide {
@@ -88,6 +116,7 @@ body {
 #slide1 {
 	background-color: #71464a;
 	height: 700px;
+	box-shadow: none;
 }
 
 #slide1 img {
