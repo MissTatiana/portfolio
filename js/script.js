@@ -30,6 +30,3 @@ slide.waypoint(function (event, direction) {
 
 });//slide.waypoint
 
-
-
-});//end
