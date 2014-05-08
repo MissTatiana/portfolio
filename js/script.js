@@ -1,5 +1,6 @@
 jQuery(document).ready(function ($) {
 
+console.log('testing');
 
 /* PARALLAX
 **********************************************/
@@ -29,4 +30,6 @@ slide.waypoint(function (event, direction) {
 	}
 
 });//slide.waypoint
+
+});
 
