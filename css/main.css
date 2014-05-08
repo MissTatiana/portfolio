@@ -238,9 +238,7 @@ h3 {
 }
 
 .bg {
-	background: url('assets/img/logo.png');
-	width: 960px;
-	height: 300px;
+
 }
 
 .imgContainer {
@@ -251,13 +249,6 @@ h3 {
 /* SLIDE 3
 ************************/
 #slide3 {
-	background-color: #53373a;
-}
-
-
-/* SLIDE 4
-************************/
-#slide4 {
 	background-color: #321c1f;
 	background-image: url('../assets/img/visual4.png');
 	background-repeat:no-repeat;

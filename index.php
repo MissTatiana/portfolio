@@ -84,22 +84,50 @@
 	</div><!-- slide2 -->
 
 	<div class="slide" id="slide3">
+		
+		<h3>Contact me</h3>
+
+		<ul class="contact">
+			<li><a href="https://github.com/MissTatiana">GitHub</a></li>
+			<li><a href="https://www.linkedin.com/profile/view?id=293915524&trk=nav_responsive_tab_profile_pic">LinkedIn</a></li>
+			<li><a href="">Resume</a></li>
+		</ul>
+
+		<form id="contact" name="contact">
+			<!-- first name -->
+			<div>
+				<label for="firstname">First name:</label>
+				<input type="text" name="firstname" id="firstname" required="required">
+			</div>
+
+			<!-- last name -->
+			<div>
+				<label for="lastname">Last name:</label>
+				<input type="text" name="lastname" id="lastname" required="required">
+			</div>
+
+			<!-- subject -->
+			<div>
+				<label for="subject">Subject:</label>
+				<input type="text" id="subject" name="subject" required="required">
+			</div>
+
+			<!-- message -->
+			<div>
+				<label for="message">Message:</label>
+				<textarea id="message" name="message"></textarea>
+			</div>
+
+			<input type="submit" class="btn" id="submit" value="Send Message">
+		</form>
+
+
 		<div class="wrapper">
 
 		</div><!-- wrapper -->
 
-		<span class="slideno">Slide 3</span>
-		<a class="button" data-slide="4" title=""></a>
 	</div><!-- slide3 -->
 
-	<div class="slide" id="slide4">
-		<div class="wrapper">
-
-				
-
-		</div><!-- wrapper -->
-
-	</div><!-- slide4 -->
 
 </div><!-- centerwrapper -->
 
