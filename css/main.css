@@ -1,68 +1,23 @@
 /*
- * main.css
- * overall style sheet for site
- * Tatiana Kerick - all rights reserved
+ * Tatiana Kerick - Portfolio Site
+ * Author: Tatiana Kerick 2014
 */
 
-
-/* BODY STYLES
-----------------------------------------*/
-@charset "utf-8";
-
-html, body {
-	width: 100%;
-	height: 100%;
-}
-
+/* BODY SETTINGS
+-------------------------------*/
 body {
+	color: #fff;
+	font-size: 18px;
 	text-align: center;
-	font-size: 62.5%;
 }
 
-.wrapper {
-	width: 960px;
-	height: 200px;
-	margin: 0 auto;
-	position: relative;
-}
-
-/* FONT 
--------------------------------------*/
-
-h1, h2, h3, h4, h5, a, p, span {
-	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif; 
-}
-
-h3 {
-	font-size: 10.000em;
-	font-weight: bold;
-	padding-top: 5px;
-	color: rgba(0, 0, 0, 0.6);
-}
-
-/* SLIDES 
---------------------------------------*/
 section {
-	width: 100%;
-	height: 500px;
-	position: relative;
-	box-shadow: inset 0px 10px 10px rgba(0, 0, 0, 0.3);
-}
-
-.button {
-	display: block;
-	width: 50px;
-	height: 50px;
-	position: absolute;
-	bottom: 0px;
-	left: 50%;
-	background-color: #333;
-	background-image: url(../img/arrow.png)
+	height: 100vh;
 }
 
 /* NAVIGATION
----------------------------------*/
-/* This class is added on scroll*/
+-------------------------------*/
+/* This class is added on scroll */
 .fixed {
 	position: fixed;
 	top: 0;
@@ -70,12 +25,13 @@ section {
 	z-index: 1;
 }
 
+/* Navigation Settings */
 nav {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
 	height: 70px;
-	background-color: #000;
+	background-color: #fff;
 }
 
 nav li {
@@ -88,8 +44,25 @@ nav li a {
 	text-transform: uppercase;
 }
 
-/* SLIDE 1
-------------------------------------*/
+
+/* SCREEN SETTINGS
+-----------------------------------*/
+#screen1 {
+	background-color: #aeaeae;
+}
+
+#screen2 {
+	background-color: #5f642a;
+}
+
+#screen3 {
+	background-color: #000;
+}
+
+
+
+
+
 
 
 

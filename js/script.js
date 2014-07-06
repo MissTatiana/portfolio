@@ -1,46 +1,21 @@
+/*
+ * Tatiana Kerick - Portfolio
+ * Author: Tatiana Kerick 2014
+*/
+
 jQuery(document).ready(function ($) {
 
 console.log('testing');
 
-/* PARALLAX
-**********************************************/
-
-//initialize stellar.js
-$(window).stellar();
-
-//Variables
-var links = $('.navigation').find('li');
-var slide = $('.slide');
-var button = $('.button');
-mywindow = $(window);
-htmlbody = $('html,body');
-
-//Setup waypoints plugin
-slide.waypoint(function (event, direction) {
-
-	//cache var of data-slide assoc w/ each slide
-	dataslide = $(this).attr('data-slide');
-
-	//change the status of the navigation based on scroll
-	if(direction === 'down') {
-		$('.navigation li[data-slide="' + dataslide + '"]').addClass('active').prev().removeClass('active');
+// STICKY NAVIGATION
+$(window).bind('scroll', function() {
+	var navHeight = $( window ).height() - 70;
+	if ($(window).scrollTop() > navHeight) {
+		$('nav').addClass('fixed');
 	}
 	else {
-		$('.navigation li[data-slide="' + dataslide + '"]').addClass('active').next().removeClass('active');
+		$('nav').removeClass('fixed');
 	}
-
-});//slide.waypoint
-
-
-// STICK NAVIGATION
-$(window).bind('scroll', function() {
-var navHeight = $( window ).height() - 70;
-     if ($(window).scrollTop() > navHeight) {
-         $('nav').addClass('fixed');
-     }
-     else {
-         $('nav').removeClass('fixed');
-     }
 });
 
 });//document
