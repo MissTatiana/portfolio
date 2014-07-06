@@ -5,8 +5,6 @@
 
 jQuery(document).ready(function ($) {
 
-console.log('testing');
-
 // STICKY NAVIGATION
 $(window).bind('scroll', function() {
 	var navHeight = $( window ).height() - 70;
@@ -16,7 +14,31 @@ $(window).bind('scroll', function() {
 	else {
 		$('nav').removeClass('fixed');
 	}
-});
+});//sticky
+
+
+// PARALLAX
+$(window).stellar();
+
+//Cache some variables
+var links = $('.navigation').find('li');
+var slide = $('.slide');
+var button = $('.button');
+mywindow = $(window);
+htmlbody = $('html,body');
+
+slide.waypoint(function (event, direction) {
+
+	dataslide = $(this).attr('data-slide');
+
+	if(direction === 'down') {
+		$('.navigation li[data-slide="' + dataslide + '"]').addClass('active').prev().removeClass('active');
+	}
+	else {
+		$('.navigation li[data-slide="' + dataslide + '"]').addClass('active').next().removeClass('active');
+	}
+
+}); //waypoint function
 
 });//document
 
