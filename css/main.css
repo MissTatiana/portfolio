@@ -59,6 +59,129 @@ nav li a {
 	background-color: #aeaeae;
 }
 
+#logo {
+	padding: 30px 0 0 10px;
+}
+
+/* nth child is off 1*/
+/*html*/
+#screen1 img:nth-child(3) {
+	position: absolute;
+	top: 80px;
+	left: 180px;
+}
+
+/* css */
+#screen1 img:nth-child(4) {
+	position: absolute;
+	top: 287px;
+	left: 350px;
+}
+
+/* jade */
+#screen1 img:nth-child(5) {
+	position: absolute;
+	top: 183px;
+	left: 480px;
+}
+
+/* bootstrap */
+#screen1 img:nth-child(6) {
+	position: absolute;
+	top: 234px;
+	left: 610px;
+}
+
+/* github */
+#screen1 img:nth-child(7) {
+	position: absolute;
+	top: 314px;
+	left: 800px;
+}
+
+/* javascript */
+#screen1 img:nth-child(8) {
+	position: absolute;
+	top: 132px;
+	left: 1015px;
+}
+
+/* jquery */
+#screen1 img:nth-child(9) {
+	position: absolute;
+	top: 400px;
+	left: 150px;
+}
+
+/* angular */
+#screen1 img:nth-child(10) {
+	position: absolute;
+	top: 451px;
+	left: 290px;
+}
+
+/* fullstack */
+#screen1 img:nth-child(11) {
+	position: absolute;
+	top: 197px;
+	left: 500px;
+}
+
+/* node */
+#screen1 img:nth-child(12) {
+	position: absolute;
+	top: 300px;
+	left: 800px;
+}
+
+/* express */
+#screen1 img:nth-child(13) {
+	position: absolute;
+	top: 400px;
+	left: 960px;
+}
+
+/* php */
+#screen1 img:nth-child(14) {
+	position: absolute;
+	top: 172px;
+	left: 1121px;
+}
+
+/* igniter */
+#screen1 img:nth-child(15) {
+	position: absolute;
+	top: 375px;
+	left: 176px;
+}
+
+/* cake */
+#screen1 img:nth-child(16) {
+	position: absolute;
+	top: 488px;
+	left: 420px;
+}
+
+/* sql */
+#screen1 img:nth-child(17) {
+	position: absolute;
+	top: 569px;
+	left: 620px;
+}
+
+/* mongo */
+#screen1 img:nth-child(18) {
+	position: absolute;
+	top: 518px;
+	left: 800px;
+}
+
+/* mongoose */
+#screen1 img:nth-child(19) {
+	position: absolute;
+	top: 315px;
+	left: 1015px;
+}
 
 
 /* SCREEN 2
