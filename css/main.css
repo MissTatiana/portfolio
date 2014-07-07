@@ -9,6 +9,7 @@ body {
 	color: #fff;
 	font-size: 18px;
 	text-align: center;
+	font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
 }
 
 section {
@@ -52,16 +53,23 @@ nav li a {
 }
 
 
-/* SCREEN SETTINGS
+/* SCREEN 1
 -----------------------------------*/
 #screen1 {
 	background-color: #aeaeae;
 }
 
+
+
+/* SCREEN 2
+-----------------------------------*/
 #screen2 {
 	background-color: #5f642a;
 }
 
+
+/* SCREEN 3
+-----------------------------------*/
 #screen3 {
 	background-color: #333;
 }
