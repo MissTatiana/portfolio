@@ -28,6 +28,16 @@
 	<div class="regBody">
 		<span class="regDepth" title="contact">Contact</span>
 
+		<div id="icons">
+			<a target="_blank" href="https://github.com/MissTatiana" alt="github"><img src="assets/img/icons/github.png"></a>
+			&nbsp;
+			&nbsp;
+			<a target="_blank" href="https://www.linkedin.com/pub/tatiana-kerick/82/522/4?trk=shareTw" alt="linked in"><img src="assets/img/icons/linked.png"></a>
+			&nbsp;
+			&nbsp;
+			<a target="_blank" href="assets/img/Resume.pdf" alt="resume"><img src="assets/img/icons/resume.png"></a>
+		</div><!-- icons -->
+
 		<form id="contact">
 			
 			<div class="name">
@@ -60,12 +70,15 @@
 
 			<div>
 				<!-- message -->
-				<label for="message">Email:</label>
+				<label for="message">Message:</label>
 
 				<textarea name="message" id="message" rows="10" cols="76"></textarea>
 			</div>
 
+			<input type="submit" id="sendBtn" class="btn" value="SEND" />
+
 		</form>
+
 	</div><!-- regBody -->
 
 
