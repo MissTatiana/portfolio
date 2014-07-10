@@ -279,7 +279,7 @@ nav li a:hover {
 	border-radius: 150px;
 	-webkit-border-radius: 150px;
 	-moz-border-radius: 150px;
-	background: url(../assets/psd/placeholder/nature.jpg) no-repeat;
+	background: url(../assets/img/about/me.png) no-repeat;
 	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
@@ -293,13 +293,13 @@ nav li a:hover {
 	border-radius: 150px;
 	-webkit-border-radius: 150px;
 	-moz-border-radius: 150px;
-	background: url(../assets/psd/placeholder/abstractcolor.jpg) no-repeat;
+	background: url(../assets/img/about/computer.png) no-repeat;
 	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	position: absolute;
-	left: 1020px;
-	top: 300px;
+	left: 1030px;
+	top: 310px;
 }
 
 #circular3 {
@@ -308,7 +308,7 @@ nav li a:hover {
 	border-radius: 150px;
 	-webkit-border-radius: 150px;
 	-moz-border-radius: 150px;
-	background: url(../assets/psd/placeholder/abstractbw.jpg) no-repeat;
+	background: url(../assets/img/about/code.png) no-repeat;
 	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
