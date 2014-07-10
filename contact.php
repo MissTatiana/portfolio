@@ -79,6 +79,29 @@
 
 		</form>
 
+		<div class="footer" id="contactFooter">
+			<a href="index.html#about">About</a>
+			&nbsp;
+			|
+			&nbsp;
+			<a href="index.html#services">Services</a>
+			&nbsp;
+			|
+			&nbsp;
+			<a href="portfolio.html">Portfolio</a>
+			&nbsp;
+			|
+			&nbsp;
+			<a href="contact.php">Contact</a>
+
+			<br />
+			<br />
+
+			<p>Tatiana Kerick 2014&copy;
+			<br />
+			KerickTatiana@gmail.com</p>
+		</div><!-- footer -->
+
 	</div><!-- regBody -->
 
 
