@@ -9,7 +9,7 @@ body {
 	color: #fff;
 	font-size: 18px;
 	text-align: center;
-	font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+	font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
 }
 
 .depth {
@@ -122,124 +122,131 @@ nav li a:hover {
 	padding: 30px 0 0 10px;
 }
 
+h4 {
+	color: #2b2b2b;
+	font-size: 30px;
+	font-weight: bold;
+	text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
 /* nth child is off 1*/
 /*html*/
-#screen1 img:nth-child(3) {
+#screen1 h4:nth-child(3) {
 	position: absolute;
-	top: 80px;
+	top: 100px;
 	left: 180px;
 }
 
-/* css */
-#screen1 img:nth-child(4) {
+/*css*/
+#screen1 h4:nth-child(4) {
 	position: absolute;
-	top: 287px;
-	left: 350px;
+	top: 304px;
+	left: 349px; /*180+95+74*/
 }
 
-/* jade */
-#screen1 img:nth-child(5) {
+/*jade*/
+#screen1 h4:nth-child(5) {
 	position: absolute;
-	top: 183px;
-	left: 480px;
+	top: 201px;
+	left: 488px; /*349+65+74*/
 }
 
-/* bootstrap */
-#screen1 img:nth-child(6) {
+/*bootstrap*/
+#screen1 h4:nth-child(6) {
 	position: absolute;
-	top: 234px;
-	left: 610px;
+	top: 253px;
+	left: 617px; /*488+55+74*/
 }
 
-/* github */
-#screen1 img:nth-child(7) {
+/*git*/
+#screen1 h4:nth-child(7) {
 	position: absolute;
-	top: 314px;
-	left: 800px;
+	top: 335px;
+	left: 816px; /*617+125+74*/
 }
 
-/* javascript */
-#screen1 img:nth-child(8) {
+/*javascript*/
+#screen1 h4:nth-child(8) {
 	position: absolute;
-	top: 132px;
-	left: 1015px;
+	top: 151px;
+	left: 1033px; /*816+143+74*/
 }
 
-/* jquery */
-#screen1 img:nth-child(9) {
+/*jquery - this is off by 1 too*/
+#screen1 h4:nth-child(10) {
+	position: absolute;
+	top: 390px;
+	left: 220px;
+}
+
+/*angular - off again wtf*/
+#screen1 h4:nth-child(12) {
 	position: absolute;
 	top: 400px;
-	left: 150px;
+	left: 379px; /*220+92+67*/
 }
 
-/* angular */
-#screen1 img:nth-child(10) {
+/*fullstack*/
+#screen1 h4:nth-child(13) {
 	position: absolute;
-	top: 411px;
-	left: 290px;
+	top: 185px;
+	left: 577px; /*379+131+67*/
 }
 
-/* fullstack */
-#screen1 img:nth-child(11) {
+/*node*/
+#screen1 h4:nth-child(14) {
 	position: absolute;
-	top: 197px;
-	left: 500px;
+	top: 289px;
+	left: 871px; /*577+227+67*/
 }
 
-/* node */
-#screen1 img:nth-child(12) {
+/*express*/
+#screen1 h4:nth-child(15) {
 	position: absolute;
-	top: 300px;
-	left: 800px;
+	top: 390px;
+	left: 1035px; /*871+97+67*/
 }
 
-/* express */
-#screen1 img:nth-child(13) {
+/*php*/
+#screen1 h4:nth-child(16) {
 	position: absolute;
-	top: 400px;
-	left: 960px;
+	top: 245px;
+	left: 180px;
 }
 
-/* php */
-#screen1 img:nth-child(14) {
+/*igniter*/
+#screen1 h4:nth-child(17) {
 	position: absolute;
-	top: 172px;
-	left: 1121px;
+	top: 325px;
+	left: 301px; /*180+54+67*/
 }
 
-/* igniter */
-#screen1 img:nth-child(15) {
+/*cake*/
+#screen1 h4:nth-child(18) {
 	position: absolute;
-	top: 375px;
-	left: 176px;
+	top: 437px;
+	left: 502px; /*281+154+67*/
 }
 
-/* cake */
-#screen1 img:nth-child(16) {
+/*sql*/
+#screen1 h4:nth-child(19) {
 	position: absolute;
-	top: 488px;
-	left: 420px;
+	top: 478px;
+	left: 669px; /*482+120+67*/
 }
 
-/* sql */
-#screen1 img:nth-child(17) {
+/*mongo*/
+#screen1 h4:nth-child(20) {
 	position: absolute;
-	top: 529px;
-	left: 620px;
+	top: 469px;
+	left: 812px; /*649+96+67*/
 }
 
-/* mongo */
-#screen1 img:nth-child(18) {
+/*mongoose*/
+#screen1 h4:nth-child(21) {
 	position: absolute;
-	top: 518px;
-	left: 800px;
-}
-
-/* mongoose */
-#screen1 img:nth-child(19) {
-	position: absolute;
-	top: 315px;
-	left: 1015px;
+	top: 262px;
+	left: 992px; /*792+133+67*/
 }
 
 
