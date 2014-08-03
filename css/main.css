@@ -63,13 +63,14 @@ nav {
 
 nav li {
 	display: inline-block;
-	padding: 24px 10px;
+	padding: 24px 3%;
 }
 
 nav li a {
 	color: #b6b6b6;
 	text-transform: uppercase;
 	letter-spacing: 1px;
+	font-weight: bold;
 	text-decoration: none;
 	transition: color 0.3s ease;
 }
@@ -116,137 +117,146 @@ nav li a:hover {
 -----------------------------------*/
 #screen1 {
 	background-color: #826b7b;
+	background-image: url(../assets/img/lace_bg.png);
 }
 
 #logo {
-	padding: 30px 0 0 10px;
+	padding: 80px 0 0 1%;
+}
+
+#lace {
+	position: absolute;
+	z-index: 0;
+	top: -103px;
+	left: 1px;
 }
 
 h4 {
-	color: #2b2b2b;
+	color: #303030;
 	font-size: 30px;
 	font-weight: bold;
 	text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+	z-index: 2;
 }
 
 /* nth child is off 1*/
 /*html*/
 #screen1 h4:nth-child(3) {
 	position: absolute;
-	top: 100px;
-	left: 180px;
+	top: 130px;
+	left: 13.3%; /*180px*/
 }
 
 /*css*/
 #screen1 h4:nth-child(4) {
 	position: absolute;
-	top: 304px;
-	left: 349px; /*180+95+74*/
+	top: 334px;
+	left: 25.8%; /*180+95+74 - 346*/
 }
 
 /*jade*/
 #screen1 h4:nth-child(5) {
 	position: absolute;
-	top: 201px;
-	left: 488px; /*349+65+74*/
+	top: 231px;
+	left: 36.2%; /*349+65+74 - 485*/
 }
 
 /*bootstrap*/
 #screen1 h4:nth-child(6) {
 	position: absolute;
-	top: 253px;
-	left: 617px; /*488+55+74*/
+	top: 285px;
+	left: 45.9%; /*488+55+74 - 614*/
 }
 
 /*git*/
 #screen1 h4:nth-child(7) {
 	position: absolute;
-	top: 335px;
-	left: 816px; /*617+125+74*/
+	top: 365px;
+	left: 60.7%; /*617+125+74 - 813*/
 }
 
 /*javascript*/
 #screen1 h4:nth-child(8) {
 	position: absolute;
-	top: 151px;
-	left: 1033px; /*816+143+74*/
+	top: 180px;
+	left: 77%; /*816+143+74 - 1030*/
 }
 
 /*jquery - this is off by 1 too*/
 #screen1 h4:nth-child(10) {
 	position: absolute;
-	top: 390px;
-	left: 220px;
+	top: 423px;
+	left: 15%; /*203*/
 }
 
 /*angular - off again wtf*/
 #screen1 h4:nth-child(12) {
 	position: absolute;
-	top: 400px;
-	left: 379px; /*220+92+67*/
+	top: 434px;
+	left: 26.9%; /*210+92+67 - 360*/
 }
 
 /*fullstack*/
 #screen1 h4:nth-child(13) {
 	position: absolute;
-	top: 185px;
-	left: 577px; /*379+131+67*/
+	top: 221px;
+	left: 41.5%; /*369+131+67 - 558*/
 }
 
 /*node*/
 #screen1 h4:nth-child(14) {
 	position: absolute;
-	top: 289px;
-	left: 871px; /*577+227+67*/
+	top: 323px;
+	left: 63.4%; /*567+227+67 - 852*/
 }
 
 /*express*/
 #screen1 h4:nth-child(15) {
 	position: absolute;
-	top: 390px;
-	left: 1035px; /*871+97+67*/
+	top: 425px;
+	left: 75.8%; /*861+97+67 - 1016*/
 }
 
 /*php*/
 #screen1 h4:nth-child(16) {
 	position: absolute;
-	top: 245px;
-	left: 180px;
+	top: 290px;
+	left: 13.3%; /*180px*/
 }
 
 /*igniter*/
 #screen1 h4:nth-child(17) {
 	position: absolute;
-	top: 325px;
-	left: 301px; /*180+54+67*/
+	top: 370px;
+	left: 21.7%; /*180+54+57 - 291*/
 }
 
 /*cake*/
 #screen1 h4:nth-child(18) {
 	position: absolute;
-	top: 437px;
-	left: 502px; /*281+154+67*/
+	top: 482px;
+	left: 37.6%; /*291+155+57 - 503*/
 }
 
 /*sql*/
 #screen1 h4:nth-child(19) {
 	position: absolute;
-	top: 478px;
-	left: 669px; /*482+120+67*/
+	top: 524px;
+	left: 51%; /*503+122+57 - 682*/
 }
 
 /*mongo*/
 #screen1 h4:nth-child(20) {
 	position: absolute;
-	top: 469px;
-	left: 812px; /*649+96+67*/
+	top: 513px;
+	left: 62.3%; /*682+95+57 - 834*/
 }
 
 /*mongoose*/
 #screen1 h4:nth-child(21) {
 	position: absolute;
-	top: 262px;
-	left: 992px; /*792+133+67*/
+	top: 309px;
+	left: 76.5%; /*834+133+57 - 1025*/
 }
 
 
@@ -254,6 +264,7 @@ h4 {
 -----------------------------------*/
 #about {
 	background-color: #ba9e9a;
+	background-image: url(../assets/img/lace_bg.png);
 	height: 900px;
 }
 
@@ -322,19 +333,6 @@ h4 {
 	position: absolute;
 	top: 500px;
 	left: 770px;
-}
-
-/* SCREEN 3 - Services
------------------------------------*/
-#services {
-	background-color: #d1c5b8;
-}
-
-#services .depth:before, #services .depth:after {
-    content: attr(title);
-    padding: 50px 0 0 495px;
-    color: rgba(255,255,255,.1);
-    position: absolute;
 }
 
 
