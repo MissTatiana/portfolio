@@ -12,30 +12,14 @@ body {
 	font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
 }
 
-.depth {
-	display: block;
-    padding: 50px;
-    color: black;
-    position: relative;
-}
-
-.depth:before, .depth:after {
-    content: attr(title);
-    padding: 50px 0 0 480px;
-    color: rgba(255,255,255,.1);
-    position: absolute;
-}
-
-.depth:before { top: 1px; left: 1px }
-.depth:after  { top: 2px; left: 2px }
-
 h1 {
 	font-size: 60px;
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	padding: 20px 0 0 0;
-	color: #fff;
+	text-shadow: rgba(224, 224, 224, 0.3) 1px 1px 0px;
+	color: #2b2b2b;
 }
 
 section {
@@ -268,11 +252,12 @@ h4 {
 	height: 900px;
 }
 
+
 #aboutText {
 	float: left;
 	width: 450px;
 	text-align: left;
-	padding: 40px 20px 0 200px;
+	padding: 40px 20px 0 15%;
 }
 
 #aboutText h3 {
@@ -302,7 +287,8 @@ h4 {
 	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	position: absolute;
-	left: 800px;
+	top: -20px;
+	left: 57%;
 }
 
 #circular2 {
@@ -316,8 +302,9 @@ h4 {
 	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	position: absolute;
-	left: 1030px;
-	top: 310px;
+	top: 250px;
+	left: 77%;
+
 }
 
 #circular3 {
@@ -331,8 +318,24 @@ h4 {
 	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	position: absolute;
-	top: 500px;
-	left: 770px;
+	top: 400px;
+	left: 60%;
+}
+
+
+#circular4 {
+	width: 200px;
+	height: 200px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background: url(../assets/img/about/trees.jpg) no-repeat;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	position: absolute;
+	top: 100px;
+	left: 80%;
 }
 
 
