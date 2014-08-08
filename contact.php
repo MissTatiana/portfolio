@@ -80,6 +80,8 @@
 
 	<p>Site still being worked on</p>
 
+	<p>KerickTatiana@gmail.com</p>
+
 	<!-- <form id="contact" method="post">
 		
 		<div class="name">
