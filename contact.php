@@ -1,3 +1,43 @@
+<?php
+
+	error_reporting(E_ALL);
+	ini_set('display_errors', 1);
+
+	//variable from input
+	$firstName = $_POST['firstName'];
+	$lastName  = $_POST['lastName'];
+	$email     = $_POST['email'];
+	$subject   = $_POST['subject'];
+	$message   = $_POST['message'];
+
+	// echo $firstName . $lastName . $email . $subject . $message;
+
+	//email variables
+	$to = "KerickTatiana@gmail.com";
+	$sub = $subject;
+
+	//html message
+	$msg = "<html><head>" . $subject . "</head>";
+	$msg .= "<body><p>Message from: " . $lastName . ", " . $firstName. "</p>";
+	$msg .= "<p>Reply to: " . $email . "</p> <br />";
+	$msg .= "<p>---- Beginning of message ----</p><br />";
+	$msg .= "<p>" . $message . "</p><br />";
+	$msg .= "<p>---- End of message ----</p></body></html>";
+
+	//setting content-type
+	$headers = "MIME-Version: 1.0" . "\r\n";
+	$headers .= "Content-type text/html; charset=iso-8859-1" . "\r\n";
+	$headers .= "From: " . $email . "\r\n";
+
+	if (! mail($to, $sub, $msg, $headers))
+	{
+		throw new Exception("Contact form delivery failed");
+	}
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -44,35 +84,35 @@
 			<!-- first name -->
 			<label for="firstName">First Name:</label>
 
-			<input type="text" name="firstName" id="firstName" required />
+			<input type="text" name="firstName" id="firstName" required value="Tatiana" />
 		</div><!-- name -->
 
 		<div>
 			<!-- last name -->
 			<label for="lastName">Last Name:</label>
 
-			<input type="text" name="lastName" id="lastName" required />
+			<input type="text" name="lastName" id="lastName" required value="Kerick" />
 		</div><!-- name -->
 
 		<div>
 			<!-- email -->
 			<label for="email">Email Address:</label>
 
-			<input type="email" name="email" id="email" required />
+			<input type="email" name="email" id="email" required value="tkerick@gmail.com" />
 		</div>
 
 		<div>
 			<!-- subject -->
 			<label for="subject">Subject:</label>
 
-			<input type="text" name="subject" id="subject" required />
+			<input type="text" name="subject" id="subject" required value="test subject" />
 		</div>
 
 		<div>
 			<!-- message -->
 			<label for="message">Message:</label>
 
-			<textarea name="message" id="message" rows="10" cols="76"></textarea>
+			<textarea name="message" id="message" rows="10" cols="76">test message</textarea>
 		</div>
 
 		<input type="submit" id="sendBtn" class="btn" value="SEND" />
@@ -80,86 +120,8 @@
 	</form>
 </div>
 
-<?php 
-	if(isset($_POST["email"])) {
 
-		$email_to = "KerickTatiana@gmail.com";
-
-		$fistName = $_POST["firstName"];
-		$lastName = $_POST["lastName"];
-		$email = $_POST["email"];
-		$subject = $_POST["subject"];
-		$message = $_POST["message"];
-
-		$errorMessage = "";
-
-		$emailMessage = "form details below.\n\n";
-
-		function died($error) {
-			//errors here
-		}
-
-		//validation expected data exists
-		if(!isset($_POST["firstName"]) ||
-				!isset($_POST["lastName"]) ||
-				!isset($_POST["email"]) ||
-				!isset($_POST["subject"]) ||
-				!isset($_POST["message"])) {
-			died("Please complete the form properly");
-		}
-
-		$emailExp = "/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/";
-		$stringExp = "/^[A-Za-z .'-]+$/";
-
-		if(!preg_match($emailExp, $email)) {
-			$errorMessage .= "Invalid email address";
-		}
-
-		if(!preg_match($stringExp, $firstName)) {
-			$errorMessage = "Invalid first name";
-		}
-
-		if(!preg_match($stringExp, $lastName)) {
-			$errorMessage = "Invalid last name";
-		}
-
-		if(!preg_match($stringExp, $subject)) {
-			$errorMessage = "Invalid subject";
-		}
-
-		if(strlen($message) < 2) {
-			$errorMessage = "The message you entered isn't valid";
-		}
-
-		function cleanString($string) {
-			$bad = array("content-type","bcc:","to:","cc:","href");
-
-			return str_replace($bad, "", $string);
-		}
-
-		$emailMessage .= "First Name: " . cleanString($firstName)."\n";
-		$emailMessage .= "Last Name: " . cleanString($lastName);
-		$emailMessage .= "Email: " . cleanString($email);
-		$emailMessage .= "Message: " . cleanString($message);
-
-		echo $emailMessage;
-
-		//create email headers
-		$headers = "Form: " . $firstName . " " . $lastName . "\r\n" . 
-
-		"Reply-To: " . $email . "\r\n" . 
-
-		"X-Mailer: PHP/" . phpversion();
-
-		@mail($email_to, $subject, $emailMessage);
-
-
-
-	}//isset post email
-
-?>
 
 <!-- My script -->
-<script src="js/script.js"></script>
 </body>
 </html>
