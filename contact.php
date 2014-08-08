@@ -78,38 +78,35 @@
 		<a target="_blank" href="assets/img/Resume.pdf" alt="resume"><img src="assets/img/icons/resume.png"></a>
 	</div><!-- icons -->
 
-	<form id="contact" method="post">
+	<p>Site still being worked on</p>
+
+	<!-- <form id="contact" method="post">
 		
 		<div class="name">
-			<!-- first name -->
 			<label for="firstName">First Name:</label>
 
 			<input type="text" name="firstName" id="firstName" required value="Tatiana" />
-		</div><!-- name -->
+		</div>
 
 		<div>
-			<!-- last name -->
 			<label for="lastName">Last Name:</label>
 
 			<input type="text" name="lastName" id="lastName" required value="Kerick" />
-		</div><!-- name -->
+		</div>
 
 		<div>
-			<!-- email -->
 			<label for="email">Email Address:</label>
 
 			<input type="email" name="email" id="email" required value="tkerick@gmail.com" />
 		</div>
 
 		<div>
-			<!-- subject -->
 			<label for="subject">Subject:</label>
 
 			<input type="text" name="subject" id="subject" required value="test subject" />
 		</div>
 
 		<div>
-			<!-- message -->
 			<label for="message">Message:</label>
 
 			<textarea name="message" id="message" rows="10" cols="76">test message</textarea>
@@ -117,7 +114,7 @@
 
 		<input type="submit" id="sendBtn" class="btn" value="SEND" />
 
-	</form>
+	</form> -->
 </div>
 
 
