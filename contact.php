@@ -1,7 +1,7 @@
 <?php
 
-	error_reporting(E_ALL);
-	ini_set('display_errors', 1);
+	// error_reporting(E_ALL);
+	// ini_set('display_errors', 1);
 
 	//variable from input
 	$firstName = $_POST['firstName'];
@@ -69,54 +69,52 @@
 	<h1>Contact Me</h1>
 
 	<div id="icons">
-		<a target="_blank" href="https://github.com/MissTatiana" alt="github"><img src="assets/img/icons/github.png"></a>
+		<a target="_blank" href="https://github.com/MissTatiana" alt="github"><img src="assets/img/icons/github.png" width="50" height="50"></a>
 		&nbsp;
 		&nbsp;
-		<a target="_blank" href="https://www.linkedin.com/pub/tatiana-kerick/82/522/4?trk=shareTw" alt="linked in"><img src="assets/img/icons/linked.png"></a>
+		<a target="_blank" href="https://www.linkedin.com/pub/tatiana-kerick/82/522/4?trk=shareTw" alt="linked in"><img src="assets/img/icons/linked.png" width="50" height="50"></a>
 		&nbsp;
 		&nbsp;
-		<a target="_blank" href="assets/img/Resume.pdf" alt="resume"><img src="assets/img/icons/resume.png"></a>
+		<a target="_blank" href="assets/img/Resume.pdf" alt="resume"><img src="assets/img/icons/resume.png" width="50" height="50"></a>
 	</div><!-- icons -->
 
-	<p>Site still being worked on</p>
-
-	<p>KerickTatiana@gmail.com</p>
-
-	<!-- <form id="contact" method="post">
+	<form id="contact" method="post" name="contact">
 		
 		<div class="name">
 			<label for="firstName">First Name:</label>
 
-			<input type="text" name="firstName" id="firstName" required value="Tatiana" />
+			<input type="text" name="firstName" id="firstName" required />
 		</div>
 
 		<div>
 			<label for="lastName">Last Name:</label>
 
-			<input type="text" name="lastName" id="lastName" required value="Kerick" />
+			<input type="text" name="lastName" id="lastName" required />
 		</div>
 
 		<div>
 			<label for="email">Email Address:</label>
 
-			<input type="email" name="email" id="email" required value="tkerick@gmail.com" />
+			<input type="email" name="email" id="email" required />
 		</div>
 
 		<div>
 			<label for="subject">Subject:</label>
 
-			<input type="text" name="subject" id="subject" required value="test subject" />
+			<input type="text" name="subject" id="subject" required />
 		</div>
 
 		<div>
 			<label for="message">Message:</label>
 
-			<textarea name="message" id="message" rows="10" cols="76">test message</textarea>
+			<textarea name="message" id="message" rows="10" cols="76"></textarea>
 		</div>
 
 		<input type="submit" id="sendBtn" class="btn" value="SEND" />
 
-	</form> -->
+	</form>
+
+
 </div>
 
 
