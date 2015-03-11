@@ -5,40 +5,18 @@
 
 jQuery(document).ready(function ($) {
 
-// STICKY NAVIGATION
-$(window).bind('scroll', function() {
-	var navHeight = $( window ).height() - 70;
-	if ($(window).scrollTop() > navHeight) {
-		$('nav').addClass('fixed');
-	}
-	else {
-		$('nav').removeClass('fixed');
-	}
-});//sticky
 
+$("#logo").hide();
 
-// PARALLAX
-$(window).stellar();
+$("#left").hide();
 
-//Cache some variables
-var links = $('.navigation').find('li');
-var slide = $('.slide');
-var button = $('.button');
-mywindow = $(window);
-htmlbody = $('html,body');
+$("#right").hide();
 
-slide.waypoint(function (event, direction) {
+$("#logo").fadeIn(3000);
 
-	dataslide = $(this).attr('data-slide');
+$("#left").delay(1000).fadeIn(3000);
 
-	if(direction === 'down') {
-		$('.navigation li[data-slide="' + dataslide + '"]').addClass('active').prev().removeClass('active');
-	}
-	else {
-		$('.navigation li[data-slide="' + dataslide + '"]').addClass('active').next().removeClass('active');
-	}
-
-}); //waypoint function
+$("#right").delay(1000).fadeIn(3000);
 
 });//document
 
