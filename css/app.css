@@ -10,7 +10,7 @@ body {
 	background: linear-gradient(
       rgba(79, 50, 50, 0.50), 
       rgba(79, 50, 50, 1)
-    ), url(../assets/img/polygons/1.jpg);
+    ), url(../assets/img/polygon.jpg);
 	background-size: 100%;
 
 }
