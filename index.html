@@ -10,7 +10,10 @@
 
 	<!-- css -->
 	<link rel="stylesheet" href="css/foundation.css" />
-  	<link rel="stylesheet" type="text/css" href="css/main.css">
+  	<link rel="stylesheet" type="text/css" href="css/app.css">
+
+  	<!-- fonts -->
+  	<link rel="stylesheet" type="text/css" href="fonts/foundation-icons.css">
 
 	<!-- Vendors -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -23,10 +26,14 @@
 
 <body>
 
-<div>
-	<img id="logo" src="assets/img/logo.png">
+<div class="row">
+	<div class="small-12 large-12">
+		<img id="logo" src="assets/img/logo.png">
+	</div>
+</div>
 
-	<div id="left" class="small-4 small-offset-2 columns">
+<div class="row">
+	<div class="small-12 medium-6 large-5 large-offset-1 columns" id="left">
 		<h2>Hello!</h2>
 
 		<p>I have something rather exciting under developmet for my site, I can't wait to show you when it's done!</p>
@@ -34,20 +41,17 @@
 		<p>In the mean time...</p>
 	</div>
 
-	<div id="right" class="small-6 columns">
-
+	<div class="small-12 medium-6 large-6 columns text-center" id="right">
 		<h3>KerickTatiana@gmail.com</h3>
 
 		<br />
 
-		<a target="_blank" href="http://lnkd.in/bFcCm43" class="button">LinkedIn</a>
+		<a target="_blank" href="http://lnkd.in/bFcCm43" class="button expand"><span class="fi-social-linkedin"></span> LinkedIn</a>
 
-		<a target="_blank" href="https://github.com/MissTatiana" class="button">Github</a>
+		<a target="_blank" href="https://github.com/MissTatiana" class="button expand"><span class="fi-social-github"></span> Github</a>
 
-		<a target="_blank" href="assets/img/Resume.pdf" class="button">Resume</a>
-
+		<a target="_blank" href="assets/img/Resume.pdf" class="button expand"><span class="fi-page-pdf"></span> Resume</a>
 	</div>
-
 </div>
 
 
