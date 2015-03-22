@@ -5,18 +5,23 @@
 
 jQuery(document).ready(function ($) {
 
-
-$("#logo").hide();
+$("#logo").hide()
 
 $("#left").hide();
 
 $("#right").hide();
 
-$("#logo").fadeIn(3000);
 
-$("#left").delay(1000).fadeIn(3000);
+$("#logo").fadeIn(1000);
 
-$("#right").delay(1000).fadeIn(3000);
+$("#logo").animate({
+	top: "-=150"
+}, 500);
+
+
+$("#left").delay(2000).fadeIn(3000);
+
+$("#right").delay(2000).fadeIn(3000);
 
 });//document
 
