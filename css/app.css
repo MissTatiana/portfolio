@@ -27,12 +27,13 @@ img {
 }
 
 #left h2 {
-	color: #999;
+	color: #bbb;
 }
 
 #left p {
 	font-size: 20px;
-	color: #999;
+	color: #bbb;
+	cursor: pointer;
 }
 
 #right {
