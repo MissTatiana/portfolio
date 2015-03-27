@@ -12,55 +12,8 @@ body {
       rgba(79, 50, 50, 1)
     ), url(../assets/img/polygon.jpg);
 	background-size: 100%;
-
 }
 
-img {
-	/*margin-top: 80px;*/
-	position: relative;
-	top: 230px;
-}
-
-#left {
-	margin-top: 108px;
-	text-align: left;
-}
-
-#left h2 {
-	color: #bbb;
-}
-
-#left p {
-	font-size: 20px;
-	color: #bbb;
-	cursor: pointer;
-}
-
-#right {
-	margin-top: 100px;
-}
-
-#right h3 {
-	color: #999;
-	text-align: left;
-}
-
-#right h3 a {
-	color: #cdcdcd;
-}
-
-#right .button {
-	background: #A3626A;
-}
-
-#right .button:hover {
-	background: #76444A;
-}
-
-
-.button {
-	font-size: 1.2em;
-}
 
 @media only screen { } /* Define mobile styles */
 

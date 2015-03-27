@@ -24,10 +24,29 @@
 
 <body>
 
-	<h1>Portfolio</h1>
+<div class="row">
+	<div class="large-12">
 
+		<script id="portfolio-template" type="text/x-handlebars-template">
+			{{#each projects}}
+				<div class="large-4 columns">
+					<img src="{{thumb}}" />
+				</div>
+				
+			{{/each}}
+		</script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.js"></script>
+		<div class="project-placeholder"></div>
+
+	</div>
+</div>
+
+<script src="js/foundation.min.js"></script>
+<script src="js/vendor/jquery.js"></script>
+<script>
+  $(document).foundation();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
 
 <!-- My script -->
 <script src="js/script.js"></script>
