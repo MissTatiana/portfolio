@@ -4,17 +4,55 @@
  * Version 2.0
 */
 
-/* BODY SETTINGS
--------------------------------*/
+/* Body styles
+---------------------------------------*/
 body {
 	background: linear-gradient(
       rgba(79, 50, 50, 0.50), 
       rgba(79, 50, 50, 1)
-    ), url(../assets/img/polygon.jpg);
+    ), url(../assets/img/polygonblur.jpg);
 	background-size: 100%;
 }
 
+/* Portfolio
+---------------------------------------*/
+.imgContainer {
+	margin-bottom: 30px;
+	background: #424242;
+}
 
+.imgContainer img {
+	-webkit-filter: blur(1px) opacity(0.4);
+	filter: blur(1px) opacity(0.4);
+}
+
+.imgContainer img:hover {
+	-webkit-filter: blur(0px) opacity(1);
+	filter: blur(0px) opacity(1);
+}
+
+.imgContainer h5 {
+	  text-align: center;
+	  background: rgba(121, 96, 106, 0.55);
+	  padding-top: 15px;
+	  margin-top: -50px;
+	  position: relative;
+	  z-index: 2;
+}
+
+.imgContainer h5 span {
+	  padding: 12px 20px;
+	  font-size: 20px;
+	  color: #fff;
+	  display: inline-block;
+	  box-sizing: border-box;
+	  width: 100%;
+	  line-height: 30px;
+}
+
+
+/* Media Queries
+---------------------------------------*/
 @media only screen { } /* Define mobile styles */
 
 @media only screen and (max-width: 40em) {
@@ -23,7 +61,7 @@ body {
 		background: linear-gradient(
       rgba(36, 25, 25, 0.50), 
       rgba(79, 50, 50, 1)
-    ), url(../assets/img/polygon.jpg);
+    ), url(../assets/img/polygonblur.jpg);
 		background-size: 300%
 	}
 } 
