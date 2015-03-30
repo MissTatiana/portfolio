@@ -126,8 +126,9 @@ $('.project-placeholder').html(theCompiledProjects);
 
 
 $('.projectLink').click(function() {
-	console.log('testing');
-})
+   console.log('testing');
+   
+});	
 
 });//document
 
