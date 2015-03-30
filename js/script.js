@@ -32,7 +32,7 @@ $('#right').delay(2000).fadeIn(3000);
 var project = {
 	projects: [
 		{
-			number: 1,
+			url: 'project1',
 			projectTitle: 'Project 1',
 			date: 'Month 00',
 			technology: 'the technology used',
