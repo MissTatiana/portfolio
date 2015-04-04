@@ -18,65 +18,44 @@
 
 <div class="row">
 	<div class="large-12">
-		<script id="portfolio-template" type="text/xhandlebars-template">
-			{{#each projects}}
-				<div class="large-10 mask">
 
-					<div class="large-4 large-offset-2 columns">
-						<img src="{{sitePicture}}" />
-					</div>
+		<div class="site text-center">
+			<div class=" large-8 large-offset-2">
+				<img class="siteImg" src="assets/img/sites/event.png">
 
-					<div class="large-5 columns">
-						<div class="row">
-							<h3>{{projectTitle}}</h3>
-							<p>{{date}}</p>
-							<p>{{technology}}</p>
-						</div>
+				<h5 id="eventH5"><span id="eventSpan">Event Assist</span></h5>
 
-						<div class="row">
-							<p class="desc">{{description}}</p>
-						</div>
+				<div class="text-left siteInfo">
+					<p>Month 20??</p>
+					<p>Cupcake ipsum dolor sit. Amet icing sweet icing chocolate cake cotton candy tootsie roll muffin pie. Cotton candy macaroon toffee.</p>
 
-						<div class="row">
-							<a href="{{git}}" class="button"><span class="fi-social-github"></span> View git</a>
-							{{#if this.url}}
-								<a href="{{url}}" class="button"><span class="fi-laptop"> View Site</a>
-							{{/if}}
-						</div>
-					</div>
+					<a class="button">Github</a>
 
-					<div class="large-1 columns">
-						<span class="fi-x"></span>
-					</div>
+					<a class="button">Site</a>
 				</div>
 
-				<div class="large-4 columns sites">
-					<a href="#" class="projectLink">
-						<div class="imgContainer">
-							<img src="{{thumb}}" />
-							<h5><span>{{projectTitle}}</span></h5>
-						</div>
-					</a>
-				</div>
-			{{/each}}
+			</div>
+		</div>
 
-		</script>
+		<div class=" large-10 large-offset-1 site">
+			<img src="assets/img/sites/pocketAD.jpg">
+		</div>
 
-		<div class="project-placeholder"></div>
+		<div class=" large-10 large-offset-1 site">
+			<img src="assets/img/sites/flipbook.jpg">
+		</div>
+		
 	</div><!-- large-12 -->
 </div><!-- row -->
 
 
 <script src="js/vendor/jquery.js"></script>
 
-<script src="js/handlebars.js"></script>
-
 <script src="js/foundation.min.js"></script>
 <script>
   $(document).foundation();
 </script>
 
-<script src="js/sites.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

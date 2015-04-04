@@ -1,15 +1,17 @@
 $(function() {
 
-	//hide modal
-	$('.mask').hide();
+	$('#eventH5').mouseover(function() {
+		console.log('testing');
 
-	$('.sites').click(function() {
-		$('.mask').show();
-		
-	});
+		var styles = {
+			'height': '300px',
+			'top': '-300px',
+			'background': 'rgba(0, 0, 0, 0.80)',
+			'color': '#8c7f91'
+		};
 
-	$('.fi-x').click(function() {
-		$('.mask').hide();
+		$(this).css( styles );
+		$('#eventSpan').css( 'color', '#a699be')
 	})
 
 });
