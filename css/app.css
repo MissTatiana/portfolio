@@ -8,6 +8,23 @@ body {
     background-size: 100%;
 }
 
+/* About me
+---------------------------------------*/
+#logo {
+	position: relative;
+	top: 300px;
+}
+
+#tagImg img {
+	top: 270px;
+	position: relative;
+}
+
+.h3 {
+	margin-top: 100px;
+}
+
+
 /* Portfolio
 ---------------------------------------*/
 
@@ -20,10 +37,6 @@ body {
 @media only screen and (max-width: 40em) {
 	/* max-width 640px, mobile-only styles, use when QAing mobile issues */
 	body {
-		background: linear-gradient(
-      rgba(36, 25, 25, 0.50), 
-      rgba(79, 50, 50, 1)
-    ), url(../assets/img/polygonblur.jpg);
 		background-size: 300%
 	}
 } 
