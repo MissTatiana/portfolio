@@ -9,6 +9,27 @@ body {
     background-attachment: fixed;
 }
 
+
+/* Repeating Styles
+---------------------------------------*/
+
+h2 {
+	/*background-color: rgba(0, 0, 0, 0.03);*/
+	-webkit-box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.15);
+	-moz-box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.15);
+	box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.15);
+	margin-bottom: 20px;
+}
+
+h2 span {
+	color: ;
+}
+
+.row {
+	margin-bottom: 30px;
+}
+
+
 /* Intro 
 ---------------------------------------*/
 #intro {
@@ -41,16 +62,6 @@ body {
 	margin-top: 240px;
 }
 
-h2 {
-	/*background-color: rgba(0, 0, 0, 0.03);*/
-	-webkit-box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.15);
-	-moz-box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.15);
-	box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.15);
-}
-
-h2 span {
-	color: ;
-}
 
 .circleImg {
 	border-radius: 150px;
@@ -103,6 +114,62 @@ h2 span {
 ---------------------------------------*/
 #port {
 	margin-top: 50px;
+}
+
+.grid-block h4 {
+	font-size: .9em;
+	color: #333;
+	background: #f5f5f5;
+	margin: 0;
+	padding: 10px;
+	border: 1px solid #ddd;
+}
+
+.grid-block img {
+	height: 193px;
+}
+
+.caption {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px;
+	background: rgba(0, 0, 0, 0.80);
+	width: 98%;
+	height: 100%;
+}
+
+.caption h3 .caption p {
+	margin: 20px;
+}
+
+.caption h3 {
+	color: #7b7b9c;
+	margin: 20px 20px 10px;
+}
+
+.caption p {
+	font-size: .75em;
+	line-height: 1.5em;
+	margin: 0 20px 15px;
+	color: #c7c7d5;
+}
+
+.caption a.learn-more {
+	padding: 5px 10px;
+	background: #08c;
+	color: #fff;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.caption a.learn-more:hover {
+	background: #fff;
+	color: #08c;
 }
 
 

@@ -66,4 +66,18 @@ $(function() {
 	$('.h3').delay(2600).fadeIn(20);
 
 
+
+
+	/* Portfolio hover
+	--------------------------------*/
+	$('.slide').hover(
+		function() {
+			$(this).find('.caption').slideDown(250);
+		},
+		function() {
+			$(this).find('.caption').slideUp(250);
+		}
+	);
+
+
 });
