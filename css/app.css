@@ -6,28 +6,104 @@ body {
       rgba(79, 50, 50, 1)
     ), url(../assets/img/bg.png);
     background-size: 100%;
+    background-attachment: fixed;
 }
 
-/* About me
+/* Intro 
 ---------------------------------------*/
+#intro {
+	display: block;
+	height: 500px;
+}
+
 #logo {
 	position: relative;
-	top: 300px;
+	top: 260px;
 }
 
 #tagImg img {
-	top: 270px;
+	top: 230px;
 	position: relative;
 }
 
 .h3 {
-	margin-top: 100px;
+	margin-top: 50px;
+	color: #7b7b9c;
+	text-shadow: 2px 2px rgba(0, 0, 0, 0.12);
+	margin-right: 15px;
 }
 
 
+
+/* About me
+---------------------------------------*/
+#aboutme {
+	margin-top: 240px;
+}
+
+h2 {
+	/*background-color: rgba(0, 0, 0, 0.03);*/
+	-webkit-box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.15);
+	-moz-box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.15);
+	box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.15);
+}
+
+h2 span {
+	color: ;
+}
+
+.circleImg {
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+#test {
+	width: 210px;
+	height: 210px;
+	background: url(../assets/img/circleimg/lights.jpg) no-repeat;
+}
+
+#me {
+	width: 300px;
+	height: 300px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background: url(../assets/img/circleimg/me.jpg) no-repeat;
+}
+
+#computer {
+	width: 250px;
+	height: 250px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background: url(../assets/img/circleimg/computer.jpg) no-repeat;
+}
+
+#trees {
+	width: 175px;
+	height: 175px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background: url(../assets/img/circleimg/trees.jpg) no-repeat;
+}
+
+#hoops {
+	width: 200px;
+	height: 200px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background: url(../assets/img/circleimg/hoops.jpg) no-repeat;
+}
+
 /* Portfolio
 ---------------------------------------*/
-
+#port {
+	margin-top: 50px;
+}
 
 
 /* Media Queries
