@@ -80,4 +80,64 @@ $(function() {
 	);
 
 
+
+
+	/* Contact and Form functionality
+	------------------------------------------*/
+	//how long to display status message
+	var messageDelay = 2000;
+
+	// Submit form via Ajax
+	function submitForm() {
+		var contactForm = $(this);
+
+		var name = $('#senderName');
+		var email = $('#senderEmail');
+		var message = $('#message');
+
+		//check field filled in
+		if( !name.val() || !email.val() || message.val() ) {
+			
+			//display warning
+			$('#incompleteMessage').fadeIn(). delay(messageDelay).fadeOut();
+		} else {
+			
+			// submit form to php script
+			$('#sendingMessage').fadeIn();
+
+			$.ajax({
+				url: contactForm.attr('action') + "?ajax=true",
+				type: contactForm.attr('method'),
+				data: contactForm.serialize(),
+				success: submitFinished
+			});
+		}
+
+		return false;
+	}
+
+	//Handle the Ajax response
+	function submitFinished( response ) {
+		response = $.trim( response );
+		$('#sendingMessage').fadeOut();
+
+		if( response == "success" ){
+			$('#successMessage').fadeIn().delay(messageDelay).fadeOut();
+			name.val("");
+			email.val("");
+			message.val("");
+		
+		} else {
+			//display failure message
+			$('#failureMessage').fadeIn.delay(messageDelay)
+		}
+	}
+
 });
+
+
+
+
+
+
+
