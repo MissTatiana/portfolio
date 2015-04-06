@@ -5,11 +5,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title></title>
 
+	<!-- foundation -->
 	<link rel="stylesheet" href="css/foundation.min.css" />
 
+	<!-- style -->
 	<link rel="stylesheet" type="text/css" href="css/app.css">
 
+	<!-- fonts -->
 	<link rel="stylesheet" type="text/css" href="assets/fonts/foundation-icons.css">
+	<link href='http://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet' type='text/css'>
 
     <script src="js/vendor/modernizr.js"></script>
 </head>
@@ -40,7 +44,7 @@
 	</div>
 </div><!-- intro -->
 
-<div id="aboutme">
+<!-- <div id="aboutme">
 
 	<div class="row">
 		<div class="large-12">
@@ -65,7 +69,7 @@
 		</div>
 	</div>
 
-</div><!-- aboutme -->
+</div> --><!-- aboutme -->
 
 
 <div class="section" id="port">
@@ -77,10 +81,12 @@
 	</div>
 
 	<div class="row">
-		<div class="large-4 columns grid-block slide">
+		<div class="large-6 columns grid-block slide">
 			<div class="caption">
 				<h3>SeeYourVeines</h3>
-				<p>Personal Blog, demonstration of site and content management, and also personal, site, design, brand development</p>
+				<p>February 2015 - Present</p>
+				<p>Personal Blog</p>
+				<p>Published through ghost, templated with handlebars, running off Node.js. Home for personal and professional development.</p>
 				<p>
 					<a href="http://seeyourveines.com/" target="_blank" class="button"><i class="fi-web"></i> Site</a>
 
@@ -90,69 +96,61 @@
 			<img src="assets/img/sites/veines.jpg">
 		</div>
 
-		<div class="large-4 columns grid-block slide">
+		<div class="large-6 columns grid-block slide">
 			<div class="caption">
 				<h3>Event Assist</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<p>May - August 2014</p>
+				<p>Web Design/Developent Final project.</p>
+				<p>Live event stage manager built on Angular Fullstack (MEAN stack). Allows login, sign-up, event and segment creation.</p>
 				<p>
 					<a href="https://github.com/MissTatiana/EventAssits" target="_blank" class="button"><i class="fi-social-github"></i> Github</a>
 				</p>
 			</div>
 			<img src="assets/img/sites/event.png">
 		</div>
+	</div>
 
-		<div class="large-4 columns grid-block slide">
+
+	<div class="row">
+		<div class="large-4 columns grid-block smaller-grid slide">
 			<div class="caption">
 				<h3>PocketAD</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<p>April 2014</p>
+				<p>Mobile Device Development Final. Project and shot list manager</p>
 				<p>
 					<a href="https://github.com/MissTatiana/MDD_Final" target="_blank" class="button"><i class="fi-social-github"></i> Github</a>
 				</p>
 			</div>
 			<img src="assets/img/sites/pocketAD.jpg">
 		</div>
-	</div>
 
-
-	<div class="row">
-		<div class="large-4 columns grid-block slide">
+		<div class="large-4 columns grid-block smaller-grid slide">
 			<div class="caption">
-				<h3>Bonefire Wireframes</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<h3>Bonfire Wireframes</h3>
+				<p>October 2013</p>
 				<p>
-					<a href="assets/pdf/bonefires.pdf" target="_blank" class="button"><i class="fi-page-pdf"></i> View PDF</a>
+					<a href="assets/pdf/bonfires.pdf" target="_blank" class="button"><i class="fi-page-pdf"></i> View PDF</a>
 				</p>
 			</div>
 			<img src="assets/img/sites/bonfires.jpg">
 		</div>
 
-		<div class="large-4 columns grid-block slide text-center">
+		<div class="large-4 columns grid-block smaller-grid slide text-center">
 			<div class="caption text-left">
 				<h3>Flipbook</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<p>March 2012</p>
+				<p>Deployment of Flash Projects Final. Adobe Air Drawing/animation application</p>
 				<p>
 					<a href="http://misstatiana.github.io/Flipbook/index.html" target="_blank" class="button"><i class="fi-web"></i> Site</a>
 				</p>
 			</div>
 			<img src="assets/img/sites/flipbook.jpg">
 		</div>
-
-		<div class="large-4 columns grid-block slide text-center">
-			<div class="caption text-left">
-				<h3>Snow Generator</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				<p>
-					<a href="http://misstatiana.github.io/ChristmasSurprise/index.html" target="_blank" class="button"><i class="fi-web"></i> Site</a>
-				</p>
-			</div>
-			<img src="assets/img/sites/snow.jpg">
-		</div>
 	</div>
 
 </div><!-- port -->
 
-<!-- <div class="section" id="contact">
-
+<div class="section" id="contact">
 	<div class="row">
 		<div class="large-12">
 			<h2><span>Contact me</span></h2>
@@ -160,8 +158,8 @@
 	</div>
 
 	<div class="row">
-		<div class="large-6 columns">
-			<form id="contactForm" acton="processForm.php" method="post">
+
+			<!-- <form id="contactForm" acton="processForm.php" method="post">
 
 				<h3>Send me an email</h3>
 
@@ -190,17 +188,26 @@
 			<div id="sendingMessage" class="statusMessage"><p>Sending your message. Please wait...</p></div>
 			<div id="successMessage" class="statusMessage"><p>Thanks for sending your message! We'll get back to you shortly.</p></div>
 			<div id="failureMessage" class="statusMessage"><p>There was a problem sending your message. Please try again.</p></div>
-			<div id="incompleteMessage" class="statusMessage"><p>Please complete all the fields in the form before sending.</p></div>
+			<div id="incompleteMessage" class="statusMessage"><p>Please complete all the fields in the form before sending.</p></div> -->
+		
+		<div class="large-6 columns">
+			<h3>Send me an email at KerickTatiana@gmail.com</h3>
 
 		</div>
 
 		<div class="large-6 columns">
+			<h3>Or...</h3> 
 
+			<a target="_blank" href="http://lnkd.in/bFcCm43" class="button expand"><span class="fi-social-linkedin"></span> LinkedIn</a>
+
+			<a target="_blank" href="https://github.com/MissTatiana" class="button expand"><span class="fi-social-github"></span> Github</a>
+
+			<a target="_blank" href="assets/pdf/KerickTatiana_Resume.pdf" class="button expand"><span class="fi-page-pdf"></span> Resume</a>
 
 		</div>
 
 	</div>
-</div> -->
+</div>
 
 
 <script src="js/vendor/jquery.js"></script>
