@@ -3,7 +3,7 @@
 body {
 	background: linear-gradient(
       rgba(67, 50, 79, 0.5), 
-      rgba(79, 50, 50, 1)
+      rgba(14, 13, 35, 0.6)
     ), url(../assets/img/bg.png);
     background-size: 100%;
     background-attachment: fixed;
@@ -74,12 +74,14 @@ h2 span {
 	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	position: relative;
 }
 
 #test {
-	width: 210px;
-	height: 210px;
+	width: 150px;
+	height: 150px;
 	background: url(../assets/img/circleimg/lights.jpg) no-repeat;
+	left: 282px;
 }
 
 #me {
@@ -88,6 +90,7 @@ h2 span {
 	-webkit-border-radius: 150px;
 	-moz-border-radius: 150px;
 	background: url(../assets/img/circleimg/me.jpg) no-repeat;
+	top: -173px;
 }
 
 #computer {
@@ -96,6 +99,8 @@ h2 span {
 	-webkit-border-radius: 150px;
 	-moz-border-radius: 150px;
 	background: url(../assets/img/circleimg/computer.jpg) no-repeat;
+	top: -280px;
+	left: 220px;
 }
 
 #trees {
@@ -104,6 +109,7 @@ h2 span {
 	-webkit-border-radius: 150px;
 	-moz-border-radius: 150px;
 	background: url(../assets/img/circleimg/trees.jpg) no-repeat;
+	top: -500px;
 }
 
 #hoops {
@@ -112,6 +118,8 @@ h2 span {
 	-webkit-border-radius: 150px;
 	-moz-border-radius: 150px;
 	background: url(../assets/img/circleimg/hoops.jpg) no-repeat;
+	top: -546px;
+	left: 100px;
 }
 
 /* Portfolio
@@ -157,20 +165,16 @@ h2 span {
 	color: #c7c7d5;
 }
 
-.caption a.learn-more {
-	padding: 5px 10px;
-	background: #08c;
-	color: #fff;
-	border-radius: 2px;
-	-moz-border-radius: 2px;
-	-webkit-border-radius: 2px;
-	font-weight: bold;
-	text-decoration: none;
+.button {
+	padding: 5px 11px;
+	border-radius: 5px;
+	background: #834444;
+	color: #b79c9c;
+	margin-right: 10px;
 }
 
-.caption a.learn-more:hover {
-	background: #fff;
-	color: #08c;
+.button:hover {
+	background: #5a2e2e;
 }
 
 /* Contact
