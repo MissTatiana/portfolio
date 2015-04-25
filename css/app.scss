@@ -1,0 +1,129 @@
+/* Variables and mixins
+---------------------------------------*/
+/* Colors */
+$black: #000;
+$charcoal: #313131;
+
+$white: #ffffff;
+$off-white: #e4e4e4;
+
+$light-red: #cbaeae;
+$red: #834444;
+$grey-purple: #6e6574;
+$violet: #7b7b9c;
+$purple: #5d4a79;
+$dark-purple: #36364c;
+
+
+@mixin transition {
+	transition: color 0.3s ease;
+}
+
+
+/* Body styles
+---------------------------------------*/
+body {
+	background: linear-gradient(
+      rgba(67, 50, 79, 0.5), 
+      rgba(14, 13, 35, 0.6)
+    ), url(../assets/img/bg.png);
+    background-size: 100%;
+    background-attachment: fixed;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.compress {
+	margin: 0 16%;
+}
+
+
+/* Nav section
+---------------------------------------*/
+.top-link {
+	background: $black;
+	height: 40px;
+
+	.large-6 {
+		margin-top: 3px;
+	}
+
+	a {
+		color: $dark-purple;
+		font-size: 18px;
+		vertical-align: middle;
+		@include transition;
+
+		&:hover {
+			color: $grey-purple;
+		}
+	}
+
+	.social {
+		font-size: 22px;
+		margin-right: 15px;
+	}
+}//top-link
+
+
+.nav {
+	background: $dark-purple;
+	text-align: center;
+
+	ul {
+		list-style: none;
+
+		li {
+			display: inline-block;
+			margin-right: 20%;
+			font-size: 25px;
+			font-weight: 400;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			a {
+				color: #A496AD;
+				@include transition;
+
+				&:hover {
+					color: $grey-purple;
+				}
+			}
+		}
+	}
+}//nav
+
+
+/* Intro
+-------------------------------------*/
+.intro {
+	#logo {
+		margin-top: 50px;
+	}
+
+	#tagImgs {
+		margin-top: 40px;
+	}
+}
+
+
+/* Media Queries
+---------------------------------------*/
+@media only screen { } /* Define mobile styles */
+
+@media only screen and (max-width: 40em) {
+	/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+	body {
+		background-size: 300%
+	}
+} 
+
+@media only screen and (min-width: 40.063em) { } /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+	/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+	body {
+		background-size: 200%
+	}
+} 
