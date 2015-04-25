@@ -55,6 +55,14 @@ body {
 .intro #tagImgs {
   margin-top: 40px; }
 
+/* About
+-------------------------------------*/
+.about {
+  background: rgba(0, 0, 0, 0.7);
+  margin-top: 80px; }
+  .about h2 {
+    color: #834444; }
+
 /* Media Queries
 ---------------------------------------*/
 /* Define mobile styles */
