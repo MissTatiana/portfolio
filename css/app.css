@@ -37,6 +37,8 @@ body {
   -webkit-box-shadow: 0px 4px 18px -5px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 4px 18px -5px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 4px 18px -5px rgba(0, 0, 0, 0.3); }
+  .nav .active {
+    color: #91A0DD; }
   .nav ul {
     list-style: none; }
     .nav ul li {
@@ -54,9 +56,14 @@ body {
 /* Intro
 -------------------------------------*/
 .intro #logo {
-  margin-top: 50px; }
+  margin-top: 90px; }
 .intro #tagImgs {
-  margin-top: 40px; }
+  margin-top: 60px;
+  text-align: center; }
+  .intro #tagImgs h3 {
+    color: #834444;
+    margin-top: 0;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.28); }
 .intro .tagImg {
   width: 75%; }
 
@@ -64,14 +71,18 @@ body {
 -------------------------------------*/
 .about {
   background: rgba(0, 0, 0, 0.44);
-  margin-top: 80px;
-  height: 500px;
+  margin-top: 180px;
+  padding: 20px 0 60px 0;
+  -webkit-box-shadow: 0px 4px 18px -5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 4px 18px -5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 18px -5px rgba(0, 0, 0, 0.3);
   /* Circle images
   -----------------------*/ }
   .about p {
-    color: #e4e4e4; }
+    color: #C3C3D8; }
   .about h2 {
-    color: #834444; }
+    color: #834444;
+    margin-bottom: 20px; }
   .about .circleImg {
     border-radius: 50%;
     position: absolute;
@@ -113,6 +124,16 @@ body {
     background-size: 100%;
     top: 350px;
     left: 30%; }
+
+/* Footer
+---------------------------------------*/
+.footer {
+  background: rgba(255, 255, 255, 0.11);
+  margin-bottom: 0px;
+  padding: 20px 0 10px 0;
+  text-align: center; }
+  .footer p {
+    color: #C3C3D8; }
 
 /* Media Queries
 ---------------------------------------*/
