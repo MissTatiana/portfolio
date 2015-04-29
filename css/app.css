@@ -55,23 +55,26 @@ body {
 
 /* Intro
 -------------------------------------*/
-.intro #logo {
-  margin-top: 90px; }
-.intro #tagImgs {
-  margin-top: 60px;
-  text-align: center; }
-  .intro #tagImgs h3 {
-    color: #834444;
-    margin-top: 0;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.28); }
-.intro .tagImg {
-  width: 75%; }
+.intro {
+  height: 600px; }
+  .intro #logo {
+    margin-top: 90px; }
+  .intro #tagImgs {
+    margin-top: 60px;
+    text-align: center;
+    position: relative; }
+    .intro #tagImgs h3 {
+      color: #834444;
+      margin-top: 0;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.28); }
+  .intro .tagImg {
+    width: 75%; }
 
 /* About
 -------------------------------------*/
 .about {
   background: rgba(0, 0, 0, 0.44);
-  margin-top: 180px;
+  margin-top: 150px;
   padding: 20px 0 60px 0;
   -webkit-box-shadow: 0px 4px 18px -5px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 4px 18px -5px rgba(0, 0, 0, 0.3);
@@ -211,7 +214,6 @@ body {
 /* Footer
 ---------------------------------------*/
 .footer {
-  background: rgba(255, 255, 255, 0.11);
   margin-bottom: 0px;
   padding: 20px 0 10px 0;
   text-align: center; }
