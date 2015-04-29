@@ -48,7 +48,7 @@ body {
       .nav ul li:last-child {
         margin-right: 0; }
       .nav ul li a {
-        color: #a8a8c1;
+        color: #8989A5;
         transition: color 0.3s ease; }
         .nav ul li a:hover {
           color: #6e6574; }
@@ -169,6 +169,44 @@ body {
     margin-right: 10px; }
   #portfolio .button:hover {
     background: #5a2e2e; }
+
+/* Conact
+---------------------------------------*/
+#contact .compress {
+  margin-top: 50px;
+  padding: 15px 25px 70px 25px;
+  border-radius: 5px; }
+#contact h2 {
+  color: #c7c7d5;
+  font-weight: 200; }
+#contact label {
+  color: #C3C3D8;
+  font-size: 1.2em; }
+#contact input, #contact textarea {
+  margin-top: 5px; }
+#contact textarea#styled {
+  height: 100px; }
+#contact .button {
+  background: rgba(186, 164, 194, 0.18);
+  -webkit-box-shadow: 0px 4px 17px -2px #2e242e;
+  -moz-box-shadow: 0px 4px 17px -2px #2e242e;
+  box-shadow: 0px 4px 17px -2px #2e242e; }
+  #contact .button:hover {
+    background: rgba(124, 48, 63, 0.71);
+    -webkit-box-shadow: 0px 0px 0px 0px #2e242e;
+    -moz-box-shadow: 0px 0px 0px 0px #2e242e;
+    box-shadow: 0px 0px 0px 0px #2e242e; }
+#contact .message {
+  margin-left: 10px;
+  margin-bottom: 20px; }
+  #contact .message p {
+    margin-bottom: 5px; }
+#contact .sent {
+  background: rgba(158, 186, 161, 0.4);
+  padding: 5px 3px; }
+#contact .bad {
+  background: rgba(186, 158, 163, 0.49);
+  padding: 5px 3px; }
 
 /* Footer
 ---------------------------------------*/
