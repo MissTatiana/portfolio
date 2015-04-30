@@ -39,7 +39,7 @@
 		<ul>
 			<li><a href="index.html">Home</a></li>
 			<li><a href="portfolio.html">My Work</a></li>
-			<li><a class="active" href="contact.html">Contact Me</a></li>
+			<li><a class="active" href="contact.php">Contact Me</a></li>
 		</ul>
 	</div>
 </div><!-- nav -->
