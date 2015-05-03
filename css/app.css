@@ -4,8 +4,8 @@
 /* Body styles
 ---------------------------------------*/
 body {
-  background: linear-gradient(rgba(67, 50, 79, 0.5), rgba(14, 13, 35, 0.6)), url(../assets/img/bg.png);
-  background-size: 100%;
+  background: linear-gradient(rgba(67, 50, 79, 0.5), rgba(14, 13, 35, 0.6)), url(../assets/img/01.jpg);
+  background-size: 150%;
   background-attachment: fixed;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 200; }
@@ -21,12 +21,12 @@ body {
   .top-link .large-6 {
     margin-top: 3px; }
   .top-link a {
-    color: #525274;
+    color: #767B8D;
     font-size: 18px;
     vertical-align: middle;
-    transition: color 0.3s ease; }
+    transition: color 0.7s ease; }
     .top-link a:hover {
-      color: #6e6574; }
+      color: #5E4352; }
   .top-link .social {
     font-size: 22px;
     margin-right: 15px; }
@@ -37,8 +37,6 @@ body {
   -webkit-box-shadow: 0px 4px 18px -5px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 4px 18px -5px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 4px 18px -5px rgba(0, 0, 0, 0.3); }
-  .nav .active {
-    color: #91A0DD; }
   .nav ul {
     list-style: none; }
     .nav ul li {
@@ -48,10 +46,10 @@ body {
       .nav ul li:last-child {
         margin-right: 0; }
       .nav ul li a {
-        color: #8989A5;
-        transition: color 0.3s ease; }
+        color: #51283F;
+        transition: color 0.7s ease; }
         .nav ul li a:hover {
-          color: #6e6574; }
+          color: #5E4352; }
 
 /* Intro
 -------------------------------------*/
@@ -64,16 +62,15 @@ body {
     text-align: center;
     position: relative; }
     .intro #tagImgs h3 {
-      color: #834444;
-      margin-top: 0;
-      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.28); }
+      color: #51283f;
+      margin-top: 0; }
   .intro .tagImg {
     width: 75%; }
 
 /* About
 -------------------------------------*/
 .about {
-  background: rgba(0, 0, 0, 0.44);
+  background: rgba(0, 0, 0, 0.63);
   margin-top: 150px;
   padding: 20px 0 60px 0;
   -webkit-box-shadow: 0px 4px 18px -5px rgba(0, 0, 0, 0.3);
