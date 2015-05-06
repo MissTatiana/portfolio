@@ -214,7 +214,7 @@ body {
 
 /* Media Queries
 ---------------------------------------*/
-@media only screen {
+@media only screen and (max-width: 30em) {
   body {
     background-size: 300%; }
 
