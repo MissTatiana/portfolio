@@ -140,10 +140,10 @@ body {
     position: absolute;
     text-align: left;
     top: 0;
-    left: 90px;
+    left: 0px;
     padding: 10px;
     background: rgba(0, 0, 0, 0.8);
-    width: 75%;
+    width: 98%;
     height: 100%; }
     #portfolio .caption h3, #portfolio .caption p {
       margin: 20px; }
@@ -214,7 +214,72 @@ body {
 
 /* Media Queries
 ---------------------------------------*/
+@media only screen {
+  body {
+    background-size: 300%; }
+
+  .compress {
+    margin: 0 0; }
+
+  .nav ul li {
+    display: block;
+    margin-right: 0%;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+    margin-top: 10px; }
+    .nav ul li:last-child {
+      margin-right: 0; }
+    .nav ul li a {
+      color: #51283F;
+      transition: color 0.7s ease; }
+      .nav ul li a:hover {
+        color: #5E4352; }
+
+  .about {
+    background: rgba(0, 0, 0, 0.63);
+    margin-top: 180px; }
+
+  /* Portfolio
+  	-------------------------------*/
+  #portfolio {
+    padding-top: 50px; }
+    #portfolio .grid-block {
+      margin: 20px 0;
+      text-align: center; }
+      #portfolio .grid-block img {
+        height: 200px; }
+    #portfolio .caption {
+      display: none;
+      position: absolute;
+      text-align: left;
+      top: 0;
+      left: 0px;
+      padding: 5px;
+      background: rgba(0, 0, 0, 0.8);
+      width: 100%;
+      height: 100%; }
+      #portfolio .caption h3, #portfolio .caption p {
+        margin: 10px; }
+      #portfolio .caption h3 {
+        color: #51283f;
+        margin: 20px 20px 10px; }
+      #portfolio .caption p {
+        font-size: .90em;
+        line-height: 1.5em;
+        margin: 0 20px 15px;
+        color: #c7c7d5; }
+    #portfolio .button {
+      padding: 5px 11px;
+      border-radius: 5px;
+      background: #767B8D;
+      color: #000;
+      margin-right: 10px; }
+    #portfolio .button:hover {
+      background: #51283f; } }
 /* Define mobile styles */
+@media only screen and (max-width: 40em) {
+  .compress {
+    margin: 0 4%; } }
 /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 /* min-width 641px, medium screens */
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
@@ -258,7 +323,45 @@ body {
       left: 51%; }
     .about #hoops {
       width: 180px;
-      height: 180px; } }
+      height: 180px; }
+
+  /* Portfolio
+  -------------------------------*/
+  #portfolio {
+    padding-top: 50px; }
+    #portfolio .grid-block {
+      margin: 20px 0;
+      text-align: center; }
+      #portfolio .grid-block img {
+        height: 300px; }
+    #portfolio .caption {
+      display: none;
+      position: absolute;
+      text-align: left;
+      top: 0;
+      left: 90px;
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.8);
+      width: 75%;
+      height: 100%; }
+      #portfolio .caption h3, #portfolio .caption p {
+        margin: 20px; }
+      #portfolio .caption h3 {
+        color: #51283f;
+        margin: 20px 20px 10px; }
+      #portfolio .caption p {
+        font-size: .90em;
+        line-height: 1.5em;
+        margin: 0 20px 15px;
+        color: #c7c7d5; }
+    #portfolio .button {
+      padding: 5px 11px;
+      border-radius: 5px;
+      background: #767B8D;
+      color: #000;
+      margin-right: 10px; }
+    #portfolio .button:hover {
+      background: #51283f; } }
 /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 /* min-width 1025px, large screens */
 /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
