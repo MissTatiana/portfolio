@@ -82,7 +82,8 @@ body {
     color: #C3C3D8; }
   .about h2 {
     color: #834444;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    margin-left: 10px; }
   .about .circleImg {
     border-radius: 50%;
     position: absolute;
@@ -132,13 +133,6 @@ body {
   #portfolio .grid-block {
     margin: 20px 0;
     text-align: center; }
-    #portfolio .grid-block h4 {
-      font-size: .9em;
-      color: #333;
-      background: #f5f5f5;
-      margin: 0;
-      padding: 10px;
-      border: 1px solid #ddd; }
     #portfolio .grid-block img {
       height: 300px; }
   #portfolio .caption {
@@ -146,7 +140,7 @@ body {
     position: absolute;
     text-align: left;
     top: 0;
-    left: 0;
+    left: 0px;
     padding: 10px;
     background: rgba(0, 0, 0, 0.8);
     width: 98%;
@@ -154,7 +148,7 @@ body {
     #portfolio .caption h3, #portfolio .caption p {
       margin: 20px; }
     #portfolio .caption h3 {
-      color: #7b7b9c;
+      color: #51283f;
       margin: 20px 20px 10px; }
     #portfolio .caption p {
       font-size: .90em;
@@ -164,21 +158,22 @@ body {
   #portfolio .button {
     padding: 5px 11px;
     border-radius: 5px;
-    background: #834444;
-    color: #b79c9c;
+    background: #767B8D;
+    color: #000;
     margin-right: 10px; }
   #portfolio .button:hover {
-    background: #5a2e2e; }
+    background: #51283f; }
 
-/* Conact
+/* Contact
 ---------------------------------------*/
 #contact .compress {
   margin-top: 50px;
   padding: 15px 25px 70px 25px;
   border-radius: 5px; }
 #contact h2 {
-  color: #c7c7d5;
-  font-weight: 200; }
+  color: #51283f;
+  font-weight: 200;
+  margin-left: 10px; }
 #contact label {
   color: #C3C3D8;
   font-size: 1.2em; }
@@ -192,7 +187,7 @@ body {
   -moz-box-shadow: 0px 4px 17px -2px #2e242e;
   box-shadow: 0px 4px 17px -2px #2e242e; }
   #contact .button:hover {
-    background: rgba(124, 48, 63, 0.71);
+    background: rgba(81, 40, 63, 0.71);
     -webkit-box-shadow: 0px 0px 0px 0px #2e242e;
     -moz-box-shadow: 0px 0px 0px 0px #2e242e;
     box-shadow: 0px 0px 0px 0px #2e242e; }
@@ -219,15 +214,156 @@ body {
 
 /* Media Queries
 ---------------------------------------*/
+@media only screen {
+  body {
+    background-size: 300%; }
+
+  .compress {
+    margin: 0 0; }
+
+  .nav ul li {
+    display: block;
+    margin-right: 0%;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+    margin-top: 10px; }
+    .nav ul li:last-child {
+      margin-right: 0; }
+    .nav ul li a {
+      color: #51283F;
+      transition: color 0.7s ease; }
+      .nav ul li a:hover {
+        color: #5E4352; }
+
+  .about {
+    background: rgba(0, 0, 0, 0.63);
+    margin-top: 180px; }
+
+  /* Portfolio
+  	-------------------------------*/
+  #portfolio {
+    padding-top: 50px; }
+    #portfolio .grid-block {
+      margin: 20px 0;
+      text-align: center; }
+      #portfolio .grid-block img {
+        height: 200px; }
+    #portfolio .caption {
+      display: none;
+      position: absolute;
+      text-align: left;
+      top: 0;
+      left: 0px;
+      padding: 5px;
+      background: rgba(0, 0, 0, 0.8);
+      width: 100%;
+      height: 100%; }
+      #portfolio .caption h3, #portfolio .caption p {
+        margin: 10px; }
+      #portfolio .caption h3 {
+        color: #51283f;
+        margin: 20px 20px 10px; }
+      #portfolio .caption p {
+        font-size: .90em;
+        line-height: 1.5em;
+        margin: 0 20px 15px;
+        color: #c7c7d5; }
+    #portfolio .button {
+      padding: 5px 11px;
+      border-radius: 5px;
+      background: #767B8D;
+      color: #000;
+      margin-right: 10px; }
+    #portfolio .button:hover {
+      background: #51283f; } }
 /* Define mobile styles */
 @media only screen and (max-width: 40em) {
-  /* max-width 640px, mobile-only styles, use when QAing mobile issues */
-  body {
-    background-size: 300%; } }
+  .compress {
+    margin: 0 4%; } }
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
 /* min-width 641px, medium screens */
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
-  body {
-    background-size: 200%; } }
+  .compress {
+    margin: 0 12%; }
+
+  /* Intro
+  ---------------------------------*/
+  .intro {
+    height: 400px; }
+    .intro #logo {
+      margin-top: 60px; }
+    .intro #tagImgs {
+      margin-top: 50px; }
+
+  /* About
+  -------------------------------*/
+  .about {
+    /* Circle images
+    -----------------------*/ }
+    .about #me {
+      background-position: 21%;
+      width: 250px;
+      height: 250px;
+      left: 1%; }
+    .about #computer {
+      width: 210px;
+      height: 210px;
+      top: 165px;
+      left: 45%; }
+    .about #trees {
+      background-size: 112%;
+      width: 160px;
+      height: 160px;
+      top: 239px; }
+    .about #lights {
+      background-size: 176%;
+      width: 180px;
+      height: 180px;
+      top: -16px;
+      left: 51%; }
+    .about #hoops {
+      width: 180px;
+      height: 180px; }
+
+  /* Portfolio
+  -------------------------------*/
+  #portfolio {
+    padding-top: 50px; }
+    #portfolio .grid-block {
+      margin: 20px 0;
+      text-align: center; }
+      #portfolio .grid-block img {
+        height: 300px; }
+    #portfolio .caption {
+      display: none;
+      position: absolute;
+      text-align: left;
+      top: 0;
+      left: 90px;
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.8);
+      width: 75%;
+      height: 100%; }
+      #portfolio .caption h3, #portfolio .caption p {
+        margin: 20px; }
+      #portfolio .caption h3 {
+        color: #51283f;
+        margin: 20px 20px 10px; }
+      #portfolio .caption p {
+        font-size: .90em;
+        line-height: 1.5em;
+        margin: 0 20px 15px;
+        color: #c7c7d5; }
+    #portfolio .button {
+      padding: 5px 11px;
+      border-radius: 5px;
+      background: #767B8D;
+      color: #000;
+      margin-right: 10px; }
+    #portfolio .button:hover {
+      background: #51283f; } }
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+/* min-width 1025px, large screens */
+/* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
 
 /*# sourceMappingURL=app.css.map */
