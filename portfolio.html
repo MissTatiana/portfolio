@@ -16,7 +16,8 @@
 </head>
 <body>
 
-<div class="top-link hide-for-small-only">
+<!-- Top links for large -->
+<div class="top-link hide-for-medium-only hide-for-small-only">
 	<div class="compress">
 		<div class="large-6 medium-6  columns text-left">
 			<a href="https://www.linkedin.com/in/tatianakerick" title="I'm professional here" target="_blank"><i class="fi-social-linkedin social"></i></a>
@@ -29,7 +30,24 @@
 		<div class="large-6 medium-6 small-6 columns text-right">
 			<a href="assets/pdf/KerickTatiana_Resume.pdf" title="See my resume" target="_blank"><i class="fi-page-pdf social"></i></a>
 
-			<a href="mailto:KerickTatiana@gmail.com">KerickTatiana@gmail.com</a>
+			<a href="mailto:KerickTatiana@gmail.com" title="Send me an email">KerickTatiana@gmail.com</a>
+		</div>
+	</div>
+</div><!-- top-links -->
+
+<!-- Top links for medium -->
+<div class="top-link show-for-medium-only">
+	<div class="compress">
+		<div class="medium-12 small-12 columns">
+			<a href="https://www.linkedin.com/in/tatianakerick" title="I'm professional here" target="_blank"><i class="fi-social-linkedin social"></i></a>
+
+			<a href="https://github.com/MissTatiana" title="I push my code here" target="_blank"><i class="fi-social-github social"></i></a>
+
+			<a href="https://twitter.com/Miss_Tatianax" title="I'm funny here" target="_blank"><i class="fi-social-twitter social"></i></a>
+
+			<a href="assets/pdf/KerickTatiana_Resume.pdf" title="See my resume" target="_blank"><i class="fi-page-pdf social"></i></a>
+
+			<a href="mailto:KerickTatiana@gmail.com" title="Send me an email"><i class="fi-mail social"></i></a>
 		</div>
 	</div>
 </div><!-- top-links -->
