@@ -214,6 +214,8 @@ body {
 
 /* Media Queries
 ---------------------------------------*/
+/* Small screens
+--------------------------------------*/
 @media only screen and (max-width: 30em) {
   body {
     background-size: 300%; }
@@ -278,13 +280,47 @@ body {
       background: #51283f; } }
 /* Define mobile styles */
 @media only screen and (max-width: 40em) {
+  body {
+    background-size: 300%; }
+
   .compress {
-    margin: 0 4%; } }
+    margin: 0 4%; }
+
+  .top-link {
+    text-align: center; }
+
+  .nav ul li {
+    display: inline-block;
+    margin-right: 10%; }
+
+  /* Intro
+  ---------------------------------*/
+  .intro #logo {
+    margin-top: 40px; }
+
+  .about {
+    margin-top: 50px; } }
 /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+/* Medium screens
+-------------------------------------*/
 /* min-width 641px, medium screens */
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   .compress {
     margin: 0 12%; }
+
+  .top-link {
+    text-align: center; }
+
+  .nav ul li {
+    margin-right: 11%;
+    font-size: 23px; }
+    .nav ul li:last-child {
+      margin-right: 0; }
+    .nav ul li a {
+      color: #51283F;
+      transition: color 0.7s ease; }
+      .nav ul li a:hover {
+        color: #5E4352; }
 
   /* Intro
   ---------------------------------*/
@@ -363,7 +399,5 @@ body {
     #portfolio .button:hover {
       background: #51283f; } }
 /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
-/* min-width 1025px, large screens */
-/* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
 
 /*# sourceMappingURL=app.css.map */

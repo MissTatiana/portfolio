@@ -346,7 +346,8 @@ body {
 
 /* Media Queries
 ---------------------------------------*/
-// Small screens
+/* Small screens
+--------------------------------------*/
 @media only screen and (max-width: 30em)  {
 	body {
 		background-size: 300%;
@@ -381,6 +382,7 @@ body {
 			}
 		}
 	}//nav
+
 
 	.about {
 		background: rgba(0, 0, 0, 0.63);
@@ -446,8 +448,46 @@ body {
 
 @media only screen and (max-width: 40em) { 
 
+		body {
+			background-size: 300%;
+		}
+
 		.compress {
 			margin: 0 4%;
+		}
+
+		.top-link {
+			text-align: center;
+		}
+
+		.nav {
+			ul {
+				li {
+					display: inline-block;
+					margin-right: 10%;
+				}
+			}
+		}//nav
+
+		/* Intro
+		---------------------------------*/
+		.intro {
+			
+			#logo {
+				margin-top: 40px;
+			}
+
+			#tag-img-sm {
+				h2 {
+					// color: #51283f;
+				}
+			}
+
+		}//intro
+
+
+		.about {
+			margin-top: 50px;
 		}
 
 
@@ -455,7 +495,8 @@ body {
 
 
 
-// Medium screens
+/* Medium screens
+-------------------------------------*/
 @media only screen and (min-width: 40.063em) { } /* min-width 641px, medium screens */
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
@@ -463,6 +504,32 @@ body {
 		.compress {
 			margin: 0 12%;
 		}
+
+		.top-link {
+			text-align: center;
+		}
+
+		.nav {
+			ul {
+				li {
+					margin-right: 11%;
+					font-size: 23px;
+
+					&:last-child {
+						margin-right: 0;
+					}
+
+					a {
+						color: #51283F;
+						@include transition;
+
+						&:hover {
+							color: #5E4352;
+						}
+					}
+				}
+			}
+		}//nav
 
 		/* Intro
 		---------------------------------*/
@@ -582,12 +649,6 @@ body {
 
 	} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
-
-
-// Large screens
-@media only screen and (min-width: 64.063em) { } /* min-width 1025px, large screens */
-
-@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
 
 
 
