@@ -58,7 +58,6 @@
 			<li><a class="active" href="index.html">Home</a></li>
 			<li><a href="portfolio.html">My Work</a></li>
 			<li><a class="active" href="contact.php">Contact Me</a></li>
-			<li><a href="contact.php">Contact Me</a></li>
 		</ul>
 	</div>
 </div><!-- nav -->
