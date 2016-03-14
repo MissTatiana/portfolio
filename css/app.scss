@@ -2,13 +2,10 @@
 ---------------------------------------*/
 /* Colors */
 $black: #000;
-$charcoal: #313131;
+$charcoal: #252525;
 
-$purple-white: #a69faa;
-
-$white: #ffffff;
-$off-white: #e4e4e4;
-
+$links: #a69faa;
+$hover: #965d62;
 
 
 
@@ -16,15 +13,17 @@ $off-white: #e4e4e4;
   -webkit-box-shadow: 0px 6px 24px 0px rgba(0,0,0,0.19);
   -moz-box-shadow: 0px 6px 24px 0px rgba(0,0,0,0.19);
   box-shadow: 0px 6px 24px 0px rgba(0,0,0,0.19)
-}
+};
 
-@mixin translucentpurple {
-  background-color: rgba(166, 159, 170, .19);
-}
+@mixin clickable {
+  color: $links;
+	transition: color 0.3s ease;
 
-@mixin transition {
-	transition: color 0.7s ease;
-}
+  &:hover {
+    color: $hover;
+  };
+};
+
 
 
 /* Body styles
@@ -47,9 +46,29 @@ body {
 /* Nav section
 ---------------------------------------*/
 nav {
-  height: 35px;
-  @include translucentpurple;
+  height: 40px;
   @include boxshadow;
+  background: $charcoal;
+
+  .social {
+    font-size: 1.6em;
+    margin: 0 5.0%;
+    @include clickable;
+
+    &:first-child { margin-left: 0; }
+  }
+
+  .navlinks {
+    margin-top: 3px;
+
+    a {
+      font-size: 1.4em;
+      margin: 0 5.0%;
+      @include clickable;
+
+      &:last-child { margin-right: 0; }
+    }
+  }
 }
 
 /* Header
@@ -58,6 +77,12 @@ nav {
   width: 100%;
   height: 600px;
   background: url(../assets/img/geometry.png) no-repeat;
+
+  padding-top: 60px;
+
+  #logo { margin-bottom: 20px; }
+
+  #sublogo { margin-bottom: 40px; }
 
   .skills {
     img { width: 50%; }
@@ -68,8 +93,8 @@ nav {
 ---------------------------------------*/
 .about {
   height: 400px;
-  @include translucentpurple;
-  @include boxshadow;
+  // @include translucentpurple;
+  // @include boxshadow;
 
 }
 
