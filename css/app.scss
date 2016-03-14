@@ -7,12 +7,7 @@ $charcoal: #313131;
 $white: #ffffff;
 $off-white: #e4e4e4;
 
-$light-red: #cbaeae;
-$red: #834444;
-$grey-purple: #6e6574;
-$violet: #7b7b9c;
-$purple: #5d4a79;
-$dark-purple: #525274;
+
 
 
 @mixin transition {
@@ -24,9 +19,9 @@ $dark-purple: #525274;
 ---------------------------------------*/
 body {
 	background: linear-gradient(
-      rgba(67, 50, 79, 0.5), 
-      rgba(14, 13, 35, 0.6)
-    ), url(../assets/img/01.jpg);
+      rgba(135, 116, 148, 0.5), 
+      rgba(43, 31, 51, 0.6)
+    ), url(../assets/img/bg.jpg);
     background-size: 150%;
     background-attachment: fixed;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
