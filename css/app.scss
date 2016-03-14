@@ -28,13 +28,23 @@ body {
 		font-weight: 200;
 }
 
+.compress { padding: 0 15%;}
 
 
 
 /* Nav section
 ---------------------------------------*/
+nav {
+  background: rgba(255, 255, 255, 0.5);
+}
 
-
+/* Header
+---------------------------------------*/
+.header {
+  width: 100%;
+  height: 600px;
+  background: url(../assets/img/geometry.png) no-repeat;
+}
 
 /* Portfolio
 ---------------------------------------*/
