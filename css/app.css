@@ -13,6 +13,9 @@ body {
 .compress {
   padding: 0 15%; }
 
+h2 {
+  color: #fff; }
+
 /* Nav section
 ---------------------------------------*/
 nav {
@@ -59,12 +62,20 @@ nav {
 /* About
 ---------------------------------------*/
 .about {
+  margin-top: 100px;
   height: 400px; }
+  .about .circle {
+    border-radius: 50%; }
+  .about h2 {
+    margin-left: 13%; }
+  .about p {
+    color: #CACACA; }
 
-/* Portfolio
----------------------------------------*/
 /* Contact
 ---------------------------------------*/
+.contactForm {
+  margin-top: 150px; }
+
 /* Footer
 ---------------------------------------*/
 

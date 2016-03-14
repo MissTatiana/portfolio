@@ -3,6 +3,8 @@
 /* Colors */
 $black: #000;
 $charcoal: #252525;
+$white: #fff;
+$grey: #CACACA;
 
 $links: #a69faa;
 $hover: #965d62;
@@ -41,7 +43,7 @@ body {
 
 .compress { padding: 0 15%;}
 
-
+h2 { color: $white; } 
 
 /* Nav section
 ---------------------------------------*/
@@ -92,21 +94,25 @@ nav {
 /* About
 ---------------------------------------*/
 .about {
+  margin-top: 100px;
   height: 400px;
-  // @include translucentpurple;
-  // @include boxshadow;
+
+  .circle { border-radius: 50%; }
+
+  h2 { margin-left: 13%; }
+
+  p { color: $grey;}
 
 }
 
 
-/* Portfolio
----------------------------------------*/
-
-
-
 /* Contact
 ---------------------------------------*/
+.contactForm {
+  margin-top: 150px;
 
+
+}
 
 
 /* Footer
