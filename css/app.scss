@@ -121,7 +121,26 @@ nav {
 #contact {
   margin-bottom: 50px;
 
-  h2 { margin-bottom: 20px; }
+  h2 { margin-top: 100px; margin-bottom: 20px; }
+
+  .message {
+    margin-left: 10px;
+    margin-bottom: 20px;
+
+    p {
+      margin-bottom: 5px;
+    }
+  }
+
+  .sent {
+    background: rgba(158, 186, 161, 0.4);
+    padding: 5px 10px;
+  }
+
+  .bad {
+    background: rgba(186, 158, 163, 0.49);
+    padding: 5px 10px;
+  }
 
   form {
     input[type="text"], textarea {
@@ -137,7 +156,7 @@ nav {
     textarea { margin-top: 10px; }
 
     .expand {
-      width: 50%;
+      width: 100%;
       background: $links;
       color: $charcoal;
       font-weight: 500;

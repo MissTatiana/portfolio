@@ -2,70 +2,44 @@
 <html class="no-js" lang="en">
 <head>
 	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title></title>
+	<title>Tatiana Kerick | Front-end Developer</title>
 
+	<!-- foundation -->
 	<link rel="stylesheet" href="css/foundation.min.css" />
 
+	<!-- style -->
 	<link rel="stylesheet" type="text/css" href="css/app.css">
 
 	<!-- fonts -->
-  	<link rel="stylesheet" type="text/css" href="lib/fonts/foundation-icons.css">
+	<link rel="stylesheet" type="text/css" href="assets/fonts/foundation-icons.css">
 
-    <script src="js/vendor/modernizr.js"></script>
 </head>
 <body>
 
-<!-- Top links for large -->
-<div class="top-link hide-for-medium-only hide-for-small-only">
-	<div class="compress">
-		<div class="large-6 medium-6  columns text-left">
-			<a href="https://www.linkedin.com/in/tatianakerick" title="I'm professional here" target="_blank"><i class="fi-social-linkedin social"></i></a>
+<nav class="large-12 columns compress navbar">
+	<div class="large-6 columns text-left">
+		<a href="https://www.linkedin.com/in/tatianakerick" title="View my LinkedIn page" target="_blank"><i class="fi-social-linkedin social"></i></a>
 
-			<a href="https://github.com/MissTatiana" title="I push my code here" target="_blank"><i class="fi-social-github social"></i></a>
+		<a href="https://github.com/MissTatiana" title="See my projects" target="_blank"><i class="fi-social-github social"></i></a>
 
-			<a href="https://twitter.com/Miss_Tatianax" title="I'm funny here" target="_blank"><i class="fi-social-twitter social"></i></a>
-		</div>
-
-		<div class="large-6 medium-6 small-6 columns text-right">
-			<a href="assets/pdf/KerickTatiana_Resume.pdf" title="See my resume" target="_blank"><i class="fi-page-pdf social"></i></a>
-
-			<a href="mailto:KerickTatiana@gmail.com" title="Send me an email">KerickTatiana@gmail.com</a>
-		</div>
+		<a href="http://seeyourveines.com/" title="Visits my blog" target="_blank"><i class="fi-skull social"></i></a>
 	</div>
-</div><!-- top-links -->
 
-<!-- Top links for medium -->
-<div class="top-link show-for-medium-only">
-	<div class="compress">
-		<div class="medium-12 small-12 columns">
-			<a href="https://www.linkedin.com/in/tatianakerick" title="I'm professional here" target="_blank"><i class="fi-social-linkedin social"></i></a>
+	<div class="large-6 columns text-right navlinks">
+		<a href="index.html" class="active">Home</a>
 
-			<a href="https://github.com/MissTatiana" title="I push my code here" target="_blank"><i class="fi-social-github social"></i></a>
+		<a href="#contactform">Contact</a>
 
-			<a href="https://twitter.com/Miss_Tatianax" title="I'm funny here" target="_blank"><i class="fi-social-twitter social"></i></a>
-
-			<a href="assets/pdf/KerickTatiana_Resume.pdf" title="See my resume" target="_blank"><i class="fi-page-pdf social"></i></a>
-
-			<a href="mailto:KerickTatiana@gmail.com" title="Send me an email"><i class="fi-mail social"></i></a>
-		</div>
+		<a href="portfolio.html">Portfolio</a>
 	</div>
-</div><!-- top-links -->
+</nav>
 
-<div class="nav">
-	<div class="compress">
-		<ul>
-			<li><a class="active" href="index.html">Home</a></li>
-			<li><a href="portfolio.html">My Work</a></li>
-			<li><a class="active" href="contact.php">Contact Me</a></li>
-		</ul>
-	</div>
-</div><!-- nav -->
-
-<div id="contact">
-	<div class="compress">
-		<div class="row">
-			<h2>Send me an email</h2>
+<div id="contact" class="compress">
+	<div class="large-10 large-offset-1">
+		<div class="row text-center">
+			<h2>Contact Me</h2>
 		</div>
 
 		<?php 
@@ -131,7 +105,7 @@
 			$headers .= "From: " . $email . "\r\n";
 
 			if(@mail($to, $subject, $message, $headers)) {
-				echo "<div class='message sent'><p>Got your message, I'll get to you as soon as possible</p></div>";
+				echo "<div class='message sent'><p>Got your message!</p></div>";
 			} else {
 			  echo "<div class='message bad'><p>Mail Not Sent</p></div>";
 			}
@@ -140,48 +114,46 @@
 
 		?>
 
-		<form name="contact" method="post">
+		<form name="contactform" method="post" id="contactform">
 				
-				<div class="row">
-					<div class="large-6 columns">
-						<label>Name
-							<input type="text" name="name" id="name" required />
-						</label>
-					</div>
+			<div class="row">
+				<div class="large-6 columns">
+					<label>
+						<input type="text" name="name" id="name" placeholder="name" required />
+					</label>
+				</div>
 
-					<div class="large-6 columns">
-						<label>Email
-							<input type="text" name="email" id="email" required />
-						</label>
-					</div>
-				</div><!-- row -->
-
-				<div class="row">
-					<div class="large-12 columns">
-						<label>Message:
-							<textarea name="message" id="message" class="styled" required rows="5"></textarea>
-		      	</label>
-		    	</div>
-				</div><!-- row -->
+				<div class="large-6 columns">
+					<label>
+						<input type="text" name="email" id="email" placeholder="email" required />
+					</label>
+				</div>
+			</div><!-- row -->
 
 			<div class="row">
 				<div class="large-12 columns">
-		    	<input type="submit" class="button expand" value="Send">
-		    </div>
+					<label>
+						<textarea name="message" id="message" class="styled" placeholder="testing" required rows="5"></textarea>
+	      			</label>
+	    		</div>
+			</div><!-- row -->
+
+			<div class="row">
+				<div class="large-12 columns text-right">
+		    		<input type="submit" class="button expand" value="Send">
+		    	</div>
 			</div><!-- row -->
 		
 		</form>
+
 	</div>
 </div>
 
-
-<script src="js/vendor/jquery.js"></script>
-
+<script src="js/vendor/jquery.min.js"></script>
+<script src="js/vendor/what-input.min.js"></script>
 <script src="js/foundation.min.js"></script>
-<script>
-  $(document).foundation();
-</script>
 
 <script src="js/script.js"></script>
+
 </body>
 </html>
