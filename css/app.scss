@@ -53,6 +53,8 @@ body {
 
 h2 { color: $white; } 
 
+p { font-weight: 400; }
+
 /* Nav section
 ---------------------------------------*/
 nav {
@@ -150,9 +152,37 @@ nav {
 }
 
 
-/* Footer
+/* Portfolio
 ---------------------------------------*/
+#portfolio {
+  margin-top: 100px;
+}
 
+.container {
+  background: rgba(37, 37, 37, .41);
+  margin-bottom: 40px;
+
+  .imgBlock {
+    img { width: 370px; height: 200px;}
+  }
+
+  .infoBlock { 
+    padding: 10px 15px;
+    max-height: 150px;
+
+    h4 { color: $white; }
+
+    p { 
+      color: $grey;
+
+    }
+
+    a {
+      @include clickable;
+      margin-right: 15px;
+    }
+  }
+}
 
 
 

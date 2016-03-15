@@ -16,6 +16,9 @@ body {
 h2 {
   color: #fff; }
 
+p {
+  font-weight: 400; }
+
 /* Nav section
 ---------------------------------------*/
 nav {
@@ -99,7 +102,29 @@ nav {
     #contact form .expand:hover {
       background: #965d62; }
 
-/* Footer
+/* Portfolio
 ---------------------------------------*/
+#portfolio {
+  margin-top: 100px; }
+
+.container {
+  background: rgba(37, 37, 37, 0.41);
+  margin-bottom: 40px; }
+  .container .imgBlock img {
+    width: 370px;
+    height: 200px; }
+  .container .infoBlock {
+    padding: 10px 15px;
+    max-height: 150px; }
+    .container .infoBlock h4 {
+      color: #fff; }
+    .container .infoBlock p {
+      color: #CACACA; }
+    .container .infoBlock a {
+      color: #a69faa;
+      transition: color 0.3s ease;
+      margin-right: 15px; }
+      .container .infoBlock a:hover {
+        color: #965d62; }
 
 /*# sourceMappingURL=app.css.map */
