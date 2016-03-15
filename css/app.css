@@ -4,400 +4,201 @@
 /* Body styles
 ---------------------------------------*/
 body {
-  background: linear-gradient(rgba(67, 50, 79, 0.5), rgba(14, 13, 35, 0.6)), url(../assets/img/01.jpg);
+  background: linear-gradient(rgba(135, 116, 148, 0.5), rgba(43, 31, 51, 0.6)), url(../assets/img/bg.jpg);
   background-size: 150%;
   background-attachment: fixed;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 200; }
 
 .compress {
-  margin: 0 16%; }
+  padding: 0 15%; }
+
+h2 {
+  color: #fff; }
+
+p {
+  font-weight: 400; }
 
 /* Nav section
 ---------------------------------------*/
-.top-link {
-  background: #000;
-  height: 40px; }
-  .top-link .large-6 {
+nav {
+  height: 40px;
+  -webkit-box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.19);
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.19);
+  background: #252525; }
+  nav .social {
+    font-size: 1.6em;
+    margin: 0 5.0%;
+    color: #a69faa;
+    transition: color 0.3s ease; }
+    nav .social:hover {
+      color: #965d62; }
+    nav .social:first-child {
+      margin-left: 0; }
+  nav .navlinks {
     margin-top: 3px; }
-  .top-link a {
-    color: #767B8D;
-    font-size: 18px;
-    vertical-align: middle;
-    transition: color 0.7s ease; }
-    .top-link a:hover {
-      color: #5E4352; }
-  .top-link .social {
-    font-size: 22px;
-    margin-right: 15px; }
-
-.nav {
-  background: rgba(0, 0, 0, 0.09);
-  text-align: center;
-  -webkit-box-shadow: 0px 4px 18px -5px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 4px 18px -5px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 4px 18px -5px rgba(0, 0, 0, 0.3); }
-  .nav ul {
-    list-style: none; }
-    .nav ul li {
-      display: inline-block;
-      margin-right: 20%;
-      font-size: 25px; }
-      .nav ul li:last-child {
+    nav .navlinks .active {
+      color: #965d62; }
+    nav .navlinks a {
+      font-size: 1.4em;
+      margin: 0 5.0%;
+      color: #a69faa;
+      transition: color 0.3s ease; }
+      nav .navlinks a:hover {
+        color: #965d62; }
+      nav .navlinks a:last-child {
         margin-right: 0; }
-      .nav ul li a {
-        color: #51283F;
-        transition: color 0.7s ease; }
-        .nav ul li a:hover {
-          color: #5E4352; }
 
-/* Intro
--------------------------------------*/
-.intro {
-  height: 600px; }
-  .intro #logo {
-    margin-top: 90px; }
-  .intro #tagImgs {
-    margin-top: 60px;
-    text-align: center;
-    position: relative; }
-    .intro #tagImgs h3 {
-      color: #51283f;
-      margin-top: 0; }
-  .intro .tagImg {
-    width: 75%; }
+/* Header
+---------------------------------------*/
+.header {
+  width: 100%;
+  height: 600px;
+  background: url(../assets/img/geometry.png) no-repeat;
+  padding-top: 60px; }
+  .header #logo {
+    margin-bottom: 20px; }
+  .header #sublogo {
+    margin-bottom: 40px; }
+  .header .skills img {
+    width: 50%; }
 
 /* About
--------------------------------------*/
+---------------------------------------*/
 .about {
-  background: rgba(0, 0, 0, 0.63);
-  margin-top: 150px;
-  padding: 20px 0 60px 0;
-  -webkit-box-shadow: 0px 4px 18px -5px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 4px 18px -5px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 4px 18px -5px rgba(0, 0, 0, 0.3);
-  /* Circle images
-  -----------------------*/ }
-  .about p {
-    color: #C3C3D8; }
+  margin: 100px 0 100px 0;
+  height: 400px; }
+  .about .circle {
+    border-radius: 50%; }
   .about h2 {
-    color: #834444;
-    margin-bottom: 20px;
-    margin-left: 10px; }
-  .about .circleImg {
-    border-radius: 50%;
-    position: absolute;
-    -webkit-box-shadow: 0px 4px 18px -5px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0px 4px 18px -5px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 4px 18px -5px rgba(0, 0, 0, 0.3); }
-  .about #me {
-    background: url(../assets/img/circleimg/me.jpg);
-    background-position: 20%;
-    width: 300px;
-    height: 300px;
-    left: 10%; }
-  .about #computer {
-    background: url(../assets/img/circleimg/computer.jpg);
-    background-size: 133%;
-    background-position: 19%;
-    width: 260px;
-    height: 260px;
-    top: 170px;
-    left: 49%; }
-  .about #trees {
-    background: url(../assets/img/circleimg/trees.jpg);
-    background-size: 112%;
-    width: 200px;
-    height: 200px;
-    top: 239px; }
-  .about #lights {
-    background: url(../assets/img/circleimg/lights.jpg);
-    background-size: 175%;
-    width: 200px;
-    height: 200px;
-    top: 20px;
-    left: 78%; }
-  .about #hoops {
-    background: url(../assets/img/circleimg/hoops.jpg);
-    width: 220px;
-    height: 220px;
-    background-position-y: -19%;
-    background-size: 100%;
-    top: 350px;
-    left: 30%; }
+    margin-left: 13%; }
+  .about p {
+    color: #CACACA;
+    width: 90%; }
+    .about p a {
+      color: #a69faa;
+      transition: color 0.3s ease; }
+      .about p a:hover {
+        color: #965d62; }
+
+/* Contact
+---------------------------------------*/
+#contact {
+  margin-bottom: 50px; }
+  #contact h2 {
+    margin-top: 100px;
+    margin-bottom: 20px; }
+  #contact .message {
+    margin-left: 10px;
+    margin-bottom: 20px; }
+    #contact .message p {
+      margin-bottom: 5px; }
+  #contact .sent {
+    background: rgba(158, 186, 161, 0.4);
+    padding: 5px 10px; }
+  #contact .bad {
+    background: rgba(186, 158, 163, 0.49);
+    padding: 5px 10px; }
+  #contact form input[type="text"], #contact form textarea {
+    background-color: rgba(166, 159, 170, 0.28);
+    box-shadow: none;
+    border: 2px solid #5C5461;
+    border-radius: 5px;
+    color: #252525; }
+    #contact form input[type="text"]:focus, #contact form textarea:focus {
+      border: 2px solid #3b2f57; }
+  #contact form textarea {
+    margin-top: 10px; }
+  #contact form .expand {
+    width: 100%;
+    background: #a69faa;
+    color: #252525;
+    font-weight: 500;
+    font-size: 1.2em;
+    padding: 10px 0;
+    margin-top: 10px; }
+    #contact form .expand:hover {
+      background: #965d62; }
 
 /* Portfolio
 ---------------------------------------*/
 #portfolio {
-  padding-top: 50px; }
-  #portfolio .grid-block {
-    margin: 20px 0;
-    text-align: center; }
-    #portfolio .grid-block img {
-      height: 300px; }
-  #portfolio .caption {
-    display: none;
-    position: absolute;
-    text-align: left;
-    top: 0;
-    left: 0px;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.8);
-    width: 98%;
-    height: 100%; }
-    #portfolio .caption h3, #portfolio .caption p {
-      margin: 20px; }
-    #portfolio .caption h3 {
-      color: #51283f;
-      margin: 20px 20px 10px; }
-    #portfolio .caption p {
-      font-size: .90em;
-      line-height: 1.5em;
-      margin: 0 20px 15px;
-      color: #c7c7d5; }
-  #portfolio .button {
-    padding: 5px 11px;
-    border-radius: 5px;
-    background: #767B8D;
-    color: #000;
-    margin-right: 10px; }
-  #portfolio .button:hover {
-    background: #51283f; }
+  margin-top: 100px; }
 
-/* Contact
----------------------------------------*/
-#contact .compress {
-  margin-top: 50px;
-  padding: 15px 25px 70px 25px;
-  border-radius: 5px; }
-#contact h2 {
-  color: #51283f;
-  font-weight: 200;
-  margin-left: 10px; }
-#contact label {
-  color: #C3C3D8;
-  font-size: 1.2em; }
-#contact input, #contact textarea {
-  margin-top: 5px; }
-#contact textarea#styled {
-  height: 100px; }
-#contact .button {
-  background: rgba(186, 164, 194, 0.18);
-  -webkit-box-shadow: 0px 4px 17px -2px #2e242e;
-  -moz-box-shadow: 0px 4px 17px -2px #2e242e;
-  box-shadow: 0px 4px 17px -2px #2e242e; }
-  #contact .button:hover {
-    background: rgba(81, 40, 63, 0.71);
-    -webkit-box-shadow: 0px 0px 0px 0px #2e242e;
-    -moz-box-shadow: 0px 0px 0px 0px #2e242e;
-    box-shadow: 0px 0px 0px 0px #2e242e; }
-#contact .message {
-  margin-left: 10px;
-  margin-bottom: 20px; }
-  #contact .message p {
-    margin-bottom: 5px; }
-#contact .sent {
-  background: rgba(158, 186, 161, 0.4);
-  padding: 5px 3px; }
-#contact .bad {
-  background: rgba(186, 158, 163, 0.49);
-  padding: 5px 3px; }
+.container {
+  background: rgba(37, 37, 37, 0.41);
+  margin-bottom: 40px; }
+  .container .imgBlock img {
+    width: 370px;
+    height: 200px; }
+  .container .infoBlock {
+    padding: 10px 15px;
+    height: 200px; }
+    .container .infoBlock h4 {
+      color: #fff; }
+    .container .infoBlock p {
+      color: #CACACA; }
+    .container .infoBlock a {
+      color: #a69faa;
+      transition: color 0.3s ease;
+      margin-right: 15px; }
+      .container .infoBlock a:hover {
+        color: #965d62; }
 
-/* Footer
----------------------------------------*/
-.footer {
-  margin-bottom: 0px;
-  padding: 20px 0 10px 0;
-  text-align: center; }
-  .footer p {
-    color: #C3C3D8; }
-
-/* Media Queries
----------------------------------------*/
-/* Small screens
---------------------------------------*/
-@media only screen and (max-width: 30em) {
-  body {
-    background-size: 300%; }
-
+/* MEDIA QUERIES
+-------------------------------------------------------*/
+/* MEDIUM
+----------------------------*/
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
   .compress {
-    margin: 0 0; }
-
-  .nav ul li {
-    display: block;
-    margin-right: 0%;
-    font-size: 20px;
-    border-bottom: 1px solid #000;
-    margin-top: 10px; }
-    .nav ul li:last-child {
-      margin-right: 0; }
-    .nav ul li a {
-      color: #51283F;
-      transition: color 0.7s ease; }
-      .nav ul li a:hover {
-        color: #5E4352; }
-
-  .about {
-    background: rgba(0, 0, 0, 0.63);
-    margin-top: 180px; }
+    padding: 0 5%; }
 
   /* Portfolio
-  	-------------------------------*/
-  #portfolio {
-    padding-top: 50px; }
-    #portfolio .grid-block {
-      margin: 20px 0;
-      text-align: center; }
-      #portfolio .grid-block img {
-        height: 200px; }
-    #portfolio .caption {
-      display: none;
-      position: absolute;
-      text-align: left;
-      top: 0;
-      left: 0px;
-      padding: 5px;
-      background: rgba(0, 0, 0, 0.8);
-      width: 100%;
-      height: 100%; }
-      #portfolio .caption h3, #portfolio .caption p {
-        margin: 10px; }
-      #portfolio .caption h3 {
-        color: #51283f;
-        margin: 20px 20px 10px; }
-      #portfolio .caption p {
-        font-size: .90em;
-        line-height: 1.5em;
-        margin: 0 20px 15px;
-        color: #c7c7d5; }
-    #portfolio .button {
-      padding: 5px 11px;
-      border-radius: 5px;
-      background: #767B8D;
-      color: #000;
-      margin-right: 10px; }
-    #portfolio .button:hover {
-      background: #51283f; } }
-/* Define mobile styles */
-@media only screen and (max-width: 40em) {
-  body {
-    background-size: 300%; }
-
+  ---------------------------------------*/
+  .container .imgBlock img {
+    width: 260px;
+    height: 152px; } }
+/* SMALL
+---------------------------*/
+@media screen and (max-width: 39.9375em) {
+  /* Nav section */
   .compress {
-    margin: 0 4%; }
+    padding: 0 0; }
 
-  .top-link {
+  nav .text-right {
     text-align: center; }
 
-  .nav ul li {
-    display: inline-block;
-    margin-right: 10%; }
+  /* Header */
+  .header {
+    height: 300px;
+    background-size: 100%;
+    padding-top: 20px; }
+    .header #sublogo {
+      margin-bottom: 20px; }
 
-  /* Intro
-  ---------------------------------*/
-  .intro #logo {
-    margin-top: 40px; }
-
+  /* About */
   .about {
-    margin-top: 50px; } }
-/* max-width 640px, mobile-only styles, use when QAing mobile issues */
-/* Medium screens
--------------------------------------*/
-/* min-width 641px, medium screens */
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  .compress {
-    margin: 0 12%; }
+    margin: 50px 0 50px 0;
+    height: 200px; }
+    .about h2 {
+      margin-left: 13%; }
+    .about p {
+      width: 100%; }
 
-  .top-link {
-    text-align: center; }
-
-  .nav ul li {
-    margin-right: 11%;
-    font-size: 23px; }
-    .nav ul li:last-child {
-      margin-right: 0; }
-    .nav ul li a {
-      color: #51283F;
-      transition: color 0.7s ease; }
-      .nav ul li a:hover {
-        color: #5E4352; }
-
-  /* Intro
-  ---------------------------------*/
-  .intro {
-    height: 400px; }
-    .intro #logo {
-      margin-top: 60px; }
-    .intro #tagImgs {
-      margin-top: 50px; }
-
-  /* About
-  -------------------------------*/
-  .about {
-    /* Circle images
-    -----------------------*/ }
-    .about #me {
-      background-position: 21%;
-      width: 250px;
-      height: 250px;
-      left: 1%; }
-    .about #computer {
-      width: 210px;
-      height: 210px;
-      top: 165px;
-      left: 45%; }
-    .about #trees {
-      background-size: 112%;
-      width: 160px;
-      height: 160px;
-      top: 239px; }
-    .about #lights {
-      background-size: 176%;
-      width: 180px;
-      height: 180px;
-      top: -16px;
-      left: 51%; }
-    .about #hoops {
-      width: 180px;
-      height: 180px; }
+  /* Contact */
+  #contact h2 {
+    margin-top: 50px; }
 
   /* Portfolio
-  -------------------------------*/
+  ---------------------------------------*/
   #portfolio {
-    padding-top: 50px; }
-    #portfolio .grid-block {
-      margin: 20px 0;
-      text-align: center; }
-      #portfolio .grid-block img {
-        height: 300px; }
-    #portfolio .caption {
-      display: none;
-      position: absolute;
-      text-align: left;
-      top: 0;
-      left: 90px;
-      padding: 10px;
-      background: rgba(0, 0, 0, 0.8);
-      width: 75%;
-      height: 100%; }
-      #portfolio .caption h3, #portfolio .caption p {
-        margin: 20px; }
-      #portfolio .caption h3 {
-        color: #51283f;
-        margin: 20px 20px 10px; }
-      #portfolio .caption p {
-        font-size: .90em;
-        line-height: 1.5em;
-        margin: 0 20px 15px;
-        color: #c7c7d5; }
-    #portfolio .button {
-      padding: 5px 11px;
-      border-radius: 5px;
-      background: #767B8D;
-      color: #000;
-      margin-right: 10px; }
-    #portfolio .button:hover {
-      background: #51283f; } }
-/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+    margin-top: 20px; }
+
+  .container {
+    text-align: center; }
+    .container .imgBlock img {
+      width: 490px;
+      height: 286px; } }
 
 /*# sourceMappingURL=app.css.map */
