@@ -147,42 +147,51 @@ nav {
   .compress {
     padding: 0 5%; }
 
-  /* About
-  --------------------------*/
+  /* Portfolio
+  ---------------------------------------*/
+  .container .imgBlock img {
+    width: 260px;
+    height: 152px; } }
+/* SMALL
+---------------------------*/
+@media screen and (max-width: 39.9375em) {
+  /* Nav section */
+  .compress {
+    padding: 0 0; }
+
+  nav .text-right {
+    text-align: center; }
+
+  /* Header */
+  .header {
+    height: 300px;
+    background-size: 100%;
+    padding-top: 20px; }
+    .header #sublogo {
+      margin-bottom: 20px; }
+
+  /* About */
   .about {
-    margin: 75px 0 50px 0;
-    height: 300px; }
-    .about .circle {
-      border-radius: 50%; }
+    margin: 50px 0 50px 0;
+    height: 200px; }
     .about h2 {
       margin-left: 13%; }
     .about p {
-      color: #CACACA;
       width: 100%; }
+
+  /* Contact */
+  #contact h2 {
+    margin-top: 50px; }
 
   /* Portfolio
   ---------------------------------------*/
   #portfolio {
-    margin-top: 100px; }
+    margin-top: 20px; }
 
   .container {
-    background: rgba(37, 37, 37, 0.41);
-    margin-bottom: 40px; }
+    text-align: center; }
     .container .imgBlock img {
-      width: 260px;
-      height: 152px; }
-    .container .infoBlock {
-      padding: 10px 15px;
-      max-height: 150px; }
-      .container .infoBlock h4 {
-        color: #fff; }
-      .container .infoBlock p {
-        color: #CACACA; }
-      .container .infoBlock a {
-        color: #a69faa;
-        transition: color 0.3s ease;
-        margin-right: 15px; }
-        .container .infoBlock a:hover {
-          color: #965d62; } }
+      width: 490px;
+      height: 286px; } }
 
 /*# sourceMappingURL=app.css.map */
