@@ -73,6 +73,8 @@ nav {
   .navlinks {
     margin-top: 3px;
 
+    .active { color: $hover; }
+
     a {
       font-size: 1.4em;
       margin: 0 5.0%;
@@ -111,7 +113,12 @@ nav {
 
   h2 { margin-left: 13%; }
 
-  p { color: $grey; width: 90%; }
+  p { 
+    color: $grey; 
+    width: 90%; 
+
+    a { @include clickable; }
+  }
 
 }
 
@@ -188,7 +195,7 @@ nav {
 
   .infoBlock { 
     padding: 10px 15px;
-    max-height: 150px;
+    height: 200px;
 
     h4 { color: $white; }
 

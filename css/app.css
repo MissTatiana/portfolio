@@ -38,6 +38,8 @@ nav {
       margin-left: 0; }
   nav .navlinks {
     margin-top: 3px; }
+    nav .navlinks .active {
+      color: #965d62; }
     nav .navlinks a {
       font-size: 1.4em;
       margin: 0 5.0%;
@@ -74,6 +76,11 @@ nav {
   .about p {
     color: #CACACA;
     width: 90%; }
+    .about p a {
+      color: #a69faa;
+      transition: color 0.3s ease; }
+      .about p a:hover {
+        color: #965d62; }
 
 /* Contact
 ---------------------------------------*/
@@ -127,7 +134,7 @@ nav {
     height: 200px; }
   .container .infoBlock {
     padding: 10px 15px;
-    max-height: 150px; }
+    height: 200px; }
     .container .infoBlock h4 {
       color: #fff; }
     .container .infoBlock p {
