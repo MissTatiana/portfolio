@@ -139,4 +139,50 @@ nav {
       .container .infoBlock a:hover {
         color: #965d62; }
 
+/* MEDIA QUERIES
+-------------------------------------------------------*/
+/* MEDIUM
+----------------------------*/
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .compress {
+    padding: 0 5%; }
+
+  /* About
+  --------------------------*/
+  .about {
+    margin: 75px 0 50px 0;
+    height: 300px; }
+    .about .circle {
+      border-radius: 50%; }
+    .about h2 {
+      margin-left: 13%; }
+    .about p {
+      color: #CACACA;
+      width: 100%; }
+
+  /* Portfolio
+  ---------------------------------------*/
+  #portfolio {
+    margin-top: 100px; }
+
+  .container {
+    background: rgba(37, 37, 37, 0.41);
+    margin-bottom: 40px; }
+    .container .imgBlock img {
+      width: 260px;
+      height: 152px; }
+    .container .infoBlock {
+      padding: 10px 15px;
+      max-height: 150px; }
+      .container .infoBlock h4 {
+        color: #fff; }
+      .container .infoBlock p {
+        color: #CACACA; }
+      .container .infoBlock a {
+        color: #a69faa;
+        transition: color 0.3s ease;
+        margin-right: 15px; }
+        .container .infoBlock a:hover {
+          color: #965d62; } }
+
 /*# sourceMappingURL=app.css.map */

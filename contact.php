@@ -18,8 +18,8 @@
 </head>
 <body>
 
-<nav class="large-12 columns compress navbar">
-	<div class="large-6 columns text-left">
+<nav class="large-12 medium-12 columns compress navbar">
+	<div class="large-6 medium-6 columns text-left">
 		<a href="https://www.linkedin.com/in/tatianakerick" title="View my LinkedIn page" target="_blank"><i class="fi-social-linkedin social"></i></a>
 
 		<a href="https://github.com/MissTatiana" title="See my projects" target="_blank"><i class="fi-social-github social"></i></a>
@@ -27,7 +27,7 @@
 		<a href="http://seeyourveines.com/" title="Visits my blog" target="_blank"><i class="fi-skull social"></i></a>
 	</div>
 
-	<div class="large-6 columns text-right navlinks">
+	<div class="large-6 medium-6 columns text-right navlinks">
 		<a href="index.html" class="active">Home</a>
 
 		<a href="#contactform">Contact</a>
@@ -37,7 +37,7 @@
 </nav>
 
 <div id="contact" class="compress">
-	<div class="large-10 large-offset-1">
+	<div class="large-12 medium-12">
 		<div class="row text-center">
 			<h2>Contact Me</h2>
 		</div>
@@ -117,13 +117,13 @@
 		<form name="contactform" method="post" id="contactform">
 				
 			<div class="row">
-				<div class="large-6 columns">
+				<div class="large-6 medium-6 columns">
 					<label>
 						<input type="text" name="name" id="name" placeholder="name" required />
 					</label>
 				</div>
 
-				<div class="large-6 columns">
+				<div class="large-6 medium-6 columns">
 					<label>
 						<input type="text" name="email" id="email" placeholder="email" required />
 					</label>
@@ -131,7 +131,7 @@
 			</div><!-- row -->
 
 			<div class="row">
-				<div class="large-12 columns">
+				<div class="large-12 medium-12 columns">
 					<label>
 						<textarea name="message" id="message" class="styled" placeholder="testing" required rows="5"></textarea>
 	      			</label>
@@ -139,7 +139,7 @@
 			</div><!-- row -->
 
 			<div class="row">
-				<div class="large-12 columns text-right">
+				<div class="large-12 medium-12 columns text-right">
 		    		<input type="submit" class="button expand" value="Send">
 		    	</div>
 			</div><!-- row -->

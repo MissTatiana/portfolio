@@ -180,6 +180,7 @@ nav {
 .container {
   background: rgba(37, 37, 37, .41);
   margin-bottom: 40px;
+  // width: 370px;
 
   .imgBlock {
     img { width: 370px; height: 200px;}
@@ -204,6 +205,65 @@ nav {
 }
 
 
+
+
+/* MEDIA QUERIES
+-------------------------------------------------------*/
+/* MEDIUM
+----------------------------*/
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+  .compress { padding: 0 5%;}
+
+  /* About
+  --------------------------*/
+  .about {
+    margin: 75px 0 50px 0;
+    height: 300px;
+
+    .circle { border-radius: 50%; }
+
+    h2 { margin-left: 13%; }
+
+    p { color: $grey; width: 100%; }
+
+  }
+
+
+  /* Portfolio
+  ---------------------------------------*/
+  #portfolio {
+    margin-top: 100px;
+  }
+
+  .container {
+    background: rgba(37, 37, 37, .41);
+    margin-bottom: 40px;
+
+    .imgBlock {
+      img { width: 260px; height: 152px;}
+    }
+
+    .infoBlock { 
+      padding: 10px 15px;
+      max-height: 150px;
+
+      h4 { color: $white; }
+
+      p { 
+        color: $grey;
+
+      }
+
+      a {
+        @include clickable;
+        margin-right: 15px;
+      }
+    }
+  }
+
+
+}
 
 
 		
