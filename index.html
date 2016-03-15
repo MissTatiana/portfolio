@@ -30,7 +30,7 @@
 	<div class="large-6 columns text-right navlinks">
 		<a href="index.html" class="active">Home</a>
 
-		<a href="#contact">Contact</a>
+		<a href="#contactform">Contact</a>
 
 		<a href="portfolio.html">Portfolio</a>
 	</div>
@@ -68,7 +68,7 @@
 
 <div class="large-12 columns compress about">
 	<div class="large-4 columns">
-		<img src="http://lorempixel.com/300/300/cats" class="circle"/>
+		<img src="assets/img/me.jpg" class="circle"/>
 	</div>
 
 	<div class="large-8 columns text-left">
@@ -77,40 +77,40 @@
 	</div>
 </div>
 
-<div id="contact" class="contactForm compress">
+<div id="contact" class="compress">
 	<div class="large-10 large-offset-1">
 		<div class="row text-center">
 			<h2>Contact Me</h2>
 		</div>
 
-		<form name="contact" method="post">
+		<form name="contactform" method="post" id="contactform">
 				
-				<div class="row">
-					<div class="large-6 columns">
-						<label>Name
-							<input type="text" name="name" id="name" required />
-						</label>
-					</div>
+			<div class="row">
+				<div class="large-6 columns">
+					<label>
+						<input type="text" name="name" id="name" placeholder="name" required />
+					</label>
+				</div>
 
-					<div class="large-6 columns">
-						<label>Email
-							<input type="text" name="email" id="email" required />
-						</label>
-					</div>
-				</div><!-- row -->
-
-				<div class="row">
-					<div class="large-12 columns">
-						<label>Message:
-							<textarea name="message" id="message" class="styled" required rows="5"></textarea>
-		      	</label>
-		    	</div>
-				</div><!-- row -->
+				<div class="large-6 columns">
+					<label>
+						<input type="text" name="email" id="email" placeholder="email" required />
+					</label>
+				</div>
+			</div><!-- row -->
 
 			<div class="row">
 				<div class="large-12 columns">
-		    	<input type="submit" class="button expand" value="Send">
-		    </div>
+					<label>
+						<textarea name="message" id="message" class="styled" placeholder="testing" required rows="5"></textarea>
+	      			</label>
+	    		</div>
+			</div><!-- row -->
+
+			<div class="row">
+				<div class="large-12 columns text-right">
+		    		<input type="submit" class="button expand" value="Send">
+		    	</div>
 			</div><!-- row -->
 		
 		</form>

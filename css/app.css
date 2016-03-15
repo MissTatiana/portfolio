@@ -62,19 +62,42 @@ nav {
 /* About
 ---------------------------------------*/
 .about {
-  margin-top: 100px;
+  margin: 100px 0 100px 0;
   height: 400px; }
   .about .circle {
     border-radius: 50%; }
   .about h2 {
     margin-left: 13%; }
   .about p {
-    color: #CACACA; }
+    color: #CACACA;
+    width: 90%; }
 
 /* Contact
 ---------------------------------------*/
-.contactForm {
-  margin-top: 150px; }
+#contact {
+  margin-bottom: 50px; }
+  #contact h2 {
+    margin-bottom: 20px; }
+  #contact form input[type="text"], #contact form textarea {
+    background-color: rgba(166, 159, 170, 0.28);
+    box-shadow: none;
+    border: 2px solid #5C5461;
+    border-radius: 5px;
+    color: #252525; }
+    #contact form input[type="text"]:focus, #contact form textarea:focus {
+      border: 2px solid #3b2f57; }
+  #contact form textarea {
+    margin-top: 10px; }
+  #contact form .expand {
+    width: 50%;
+    background: #a69faa;
+    color: #252525;
+    font-weight: 500;
+    font-size: 1.2em;
+    padding: 10px 0;
+    margin-top: 10px; }
+    #contact form .expand:hover {
+      background: #965d62; }
 
 /* Footer
 ---------------------------------------*/
