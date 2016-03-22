@@ -1,0 +1,51 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>InterChange</title>
+
+	<!-- angular -->
+	<script src="js/angular.min.js"></script>
+	<script src="js/angular-route.min.js"></script>
+	<script src="js/angular-sanitize.min.js"></script>
+
+	<!-- styles -->
+	<link rel="stylesheet" type="text/css" href="css/foundation.min.css">
+	<script src="js/vendor/modernizr.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- fonts -->
+	<link rel="stylesheet" type="text/css" href="assets/fonts/foundation-icons.css">
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Hammersmith+One' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+	
+</head>
+<body ng-app="InterApp">
+
+	<div ng-view class="app-container"></div>
+
+<!-- Modules -->
+<script src="js/app.js"></script>
+
+<!-- Controllers -->
+<script src="js/controllers/MainController.js"></script>
+<script src="js/controllers/DisplayController.js"></script>
+
+<!-- Services -->
+<script src="js/services/displays.js"></script>
+
+
+<!-- Foundation -->
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation.min.js"></script>
+<script>
+  $(document).foundation();
+</script>
+
+</body>
+</html>
