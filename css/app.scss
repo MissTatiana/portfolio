@@ -107,18 +107,35 @@ nav {
 
   padding-top: 60px;
 
-  #logo { margin-bottom: 20px; }
+  #logo { 
+    margin-bottom: 20px; 
+    position: relative;
+    top: 75px;
+    opacity: 0;
+  }
 
-  #sublogo { margin-bottom: 40px; }
+  #sublogo { 
+    margin-bottom: 40px; 
+    position: relative;
+    top: 75px;
+    opacity: 0;
+  }
 
   .skills {
     img { width: 50%; }
   }
+
+  #sass, #stack, #ui, #agile {
+      position: relative;
+      top: 75px;
+      opacity: 0;
+    }
 }
 
 /* About
 ---------------------------------------*/
 .about {
+  opacity: 0;
   margin: 100px 0 100px 0;
   height: 400px;
 
