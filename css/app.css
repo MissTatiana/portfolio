@@ -1,6 +1,26 @@
 /* Variables and mixins
 ---------------------------------------*/
 /* Colors */
+/* Loader
+---------------------------------------*/
+.no-js #loader {
+  display: none; }
+
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0; }
+
+.se-pre-con {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(../assets/img/loading.gif) center no-repeat #fff; }
+
 /* Body styles
 ---------------------------------------*/
 body {
@@ -58,15 +78,26 @@ nav {
   background: url(../assets/img/geometry.png) no-repeat;
   padding-top: 60px; }
   .header #logo {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    position: relative;
+    top: 75px;
+    opacity: 0; }
   .header #sublogo {
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    position: relative;
+    top: 75px;
+    opacity: 0; }
   .header .skills img {
     width: 50%; }
+  .header #sass, .header #stack, .header #ui, .header #agile {
+    position: relative;
+    top: 75px;
+    opacity: 0; }
 
 /* About
 ---------------------------------------*/
 .about {
+  opacity: 0;
   margin: 100px 0 100px 0;
   height: 400px; }
   .about .circle {
