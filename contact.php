@@ -30,9 +30,9 @@
 	</div>
 
 	<div class="large-6 medium-6 small-12 columns text-right navlinks">
-		<a class="active" href="index.html">Home</a>
+		<a href="index.html">Home</a>
 
-		<a href="contact.php">Contact</a>
+		<a class="active" href="contact.php">Contact</a>
 
 		<a href="portfolio.html">Portfolio</a>
 	</div>
