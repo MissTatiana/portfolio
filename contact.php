@@ -18,19 +18,21 @@
 </head>
 <body>
 
-<nav class="large-12 medium-12 small-12 columns compress navbar">
+<nav class="large-12 medium-12 columns compress navbar">
 	<div class="large-6 medium-6 hide-for-small-only columns text-left">
 		<a href="https://www.linkedin.com/in/tatianakerick" title="View my LinkedIn page" target="_blank"><i class="fi-social-linkedin social"></i></a>
 
 		<a href="https://github.com/MissTatiana" title="See my projects" target="_blank"><i class="fi-social-github social"></i></a>
 
-		<a href="http://seeyourveines.com/" title="Visits my blog" target="_blank"><i class="fi-skull social"></i></a>
+		<a href="http://codepen.io/Miss_Tatiana/" title="View my Codepen" target="_blank"><i class="fi-annotate social"></i></a>
+
+		<a href="http://seeyourveines.com/" title="Visit my blog" target="_blank"><i class="fi-skull social"></i></a>
 	</div>
 
 	<div class="large-6 medium-6 small-12 columns text-right navlinks">
-		<a href="index.html">Home</a>
+		<a class="active" href="index.html">Home</a>
 
-		<a class="active" href="contact.php">Contact</a>
+		<a href="contact.php">Contact</a>
 
 		<a href="portfolio.html">Portfolio</a>
 	</div>
